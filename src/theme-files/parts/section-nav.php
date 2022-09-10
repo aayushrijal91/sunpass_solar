@@ -41,7 +41,11 @@
                 <nav class="navbar navbar-expand-xl navbar-light">
                     <a class="navbar-brand" href="<?= home_url() ?>"><img src="<?= $logo['url']; ?>" alt="<?= $logo['alt']; ?>" /></a>
                     <button class="navbar-toggler" id="triggerSlideNav">
-                        <span class="navbar-toggler-icon"></span>
+                        <svg width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="36.9417" height="3.875" rx="1.9375" fill="white" />
+                            <rect y="14.2083" width="36.9417" height="3.875" rx="1.9375" fill="white" />
+                            <rect y="27.125" width="36.9417" height="3.875" rx="1.9375" fill="white" />
+                        </svg>
                     </button>
                     <div class="collapse navbar-collapse" id="mainNav">
                         <div class="ms-auto">

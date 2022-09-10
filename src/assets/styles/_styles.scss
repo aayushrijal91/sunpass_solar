@@ -24,8 +24,12 @@ header {
 
     .navigation {
         background: imgUrl("navigation.png") right top, linear-gradient(124.27deg, #0E9447 28%, #19BE60 92.45%);
-        background-size: contain;
         padding: 8px 0;
+        background-size: cover;
+
+        @include media-breakpoint-up(md) {
+            background-size: contain;
+        }
 
         .primary_top_menu ul {
             li {
@@ -47,12 +51,22 @@ header {
                 }
             }
         }
+
+        @include media-breakpoint-down(sm) {
+            nav.navbar {
+                flex-wrap: nowrap;
+            }
+        }
     }
 }
 
 footer {
     background: imgUrl('footer.png') right bottom, linear-gradient(136.9deg, $tertiary 31.95%, $secondary 83.91%);
     color: $white;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 1.5rem;
+    }
 
     .social_username {
         font-size: 1.125rem;
@@ -70,19 +84,29 @@ footer {
     }
 
     .navigation_wrapper {
-        padding: 60px 0 81px;
+        padding: 24px 0 48px;
 
-        .sitemap ul,
+        @include media-breakpoint-up(md) {
+            padding: 60px 0 81px;
+        }
+
+        .footer_menu ul,
         .solar_services ul {
             padding-inline-start: 0;
 
             li {
                 font-size: 0.875rem;
-
+                list-style: none;
+                
                 a {
-                    padding-top: 9px;
-                    padding-bottom: 9px;
                     font-family: $font-roboto;
+                    color: $white;
+                    text-decoration: none;
+                    padding: 9px 0 !important;
+
+                    @include media-breakpoint-down(sm) {
+                        padding: 4px 0 !important;
+                    }
                 }
             }
         }
@@ -95,5 +119,18 @@ footer {
     .footer_bottom_wrapper {
         font-size: 0.875rem;
         padding: 24px 0;
+
+        .footer_bottom_menu ul{
+            display: flex;
+            padding-inline-start: 0;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+
+            li {
+                list-style: none;
+                text-align: center;
+            }
+        }
     }
 }
