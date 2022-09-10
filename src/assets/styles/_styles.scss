@@ -38,7 +38,7 @@ header {
         }
 
         .primary_menu ul {
-            padding-top: 48px;
+            padding-top: 39px;
 
             li {
                 a {
@@ -47,5 +47,53 @@ header {
                 }
             }
         }
+    }
+}
+
+footer {
+    background: imgUrl('footer.png') right bottom, linear-gradient(136.9deg, $tertiary 31.95%, $secondary 83.91%);
+    color: $white;
+
+    .social_username {
+        font-size: 1.125rem;
+        padding-left: 12px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+        }
+    }
+
+    hr {
+        border-color: $white;
+        border-width: 2px;
+        margin: 0;
+    }
+
+    .navigation_wrapper {
+        padding: 60px 0 81px;
+
+        .sitemap ul,
+        .solar_services ul {
+            padding-inline-start: 0;
+
+            li {
+                font-size: 0.875rem;
+
+                a {
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    font-family: $font-roboto;
+                }
+            }
+        }
+
+        .solar_services {
+            column-count: 2;
+        }
+    }
+
+    .footer_bottom_wrapper {
+        font-size: 0.875rem;
+        padding: 24px 0;
     }
 }
