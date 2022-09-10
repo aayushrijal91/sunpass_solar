@@ -1,0 +1,51 @@
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    .slide-nav {
+        position: fixed;
+        background: $primary;
+        height: 100%;
+        z-index: 1000;
+        width: 100%;
+        padding: 50px;
+        color: $white;
+        font-family: $font-roboto;
+        font-weight: 500;
+        font-size: 1.25rem;
+        transform: translateX(100%);
+        transition: 0.2s all ease-in-out;
+
+        &.nav-open {
+            transform: translateX(0);
+        }
+    }
+
+    .navigation {
+        background: imgUrl("navigation.png") right top, linear-gradient(124.27deg, #0E9447 28%, #19BE60 92.45%);
+        background-size: contain;
+        padding: 8px 0;
+
+        .primary_top_menu ul {
+            li {
+                a {
+                    color: $white;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .primary_menu ul {
+            padding-top: 48px;
+
+            li {
+                a {
+                    color: $white;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

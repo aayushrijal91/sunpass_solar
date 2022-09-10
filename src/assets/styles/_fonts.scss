@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$font-circular: "CircularStd", "sans-serif";
+$font-roboto: 'Roboto', sans-serif;
+
+$font-body: $font-circular;
+
+$font-families: (
+    "graphik": "graphik",
+    "roboto": "Roboto",
+);
+
+@each $name, $font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../fonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: url($asset-path + $font-file + ".woff") format("woff"),
+            url($asset-path + $font-file + ".woff2") format("woff2"),
+            url($asset-path + $font-file + ".eot") format("eot"),
+            url($asset-path + $font-file + ".ttf") format("ttf");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("CircularStd", "CircularStd-Book", 400);
+@include font-face("CircularStd", "CircularStd-Medium", 500);
+@include font-face("CircularStd", "CircularStd-Bold", 700);
+@include font-face("CircularStd", "CircularStd-Black", 900);
+
+$font-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $fw in $font-weights {
+    .fw-#{$fw} {
+        font-weight: $fw;
+    }
+}

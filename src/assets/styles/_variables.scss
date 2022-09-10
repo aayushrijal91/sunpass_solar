@@ -1,0 +1,133 @@
+$primary: #0E9447;
+$secondary: #13984C;
+$tertiary: #09823C;
+$primary-dark: #116635;
+$primary-light: #19BE60;
+$yellow: #FFC500;
+$orange: #FF6C00;
+$blue: #3371F2;
+$black: #000000;
+$dark: #19191B;
+$dark-grey: #333333;
+$grey: #666666;
+$light-grey: #696871;
+$fade-grey: #818493;
+$white: #ffffff;
+
+$theme-colors: (
+    ) !default;
+$theme-colors: map-merge(("primary":$primary,
+            "secondary":$secondary,
+            "tertiary":$tertiary,
+            "primary-dark":$primary-dark,
+            "primary-light":$primary-light,
+            "yellow":$yellow,
+            "orange":$orange,
+            "blue":$blue,
+            "black":$black,
+            "dark":$dark,
+            "dark-grey":$dark-grey,
+            "grey":$grey,
+            "light-grey":$light-grey,
+            "fade-grey":$fade-grey,
+            "white":$white ),
+        $theme-colors
+);
+
+// Grid Breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1440px,
+    xxl: 1748px,
+    ) !default;
+// Container sizing
+$container-max-widths: (
+    sm: 540px,
+    md: 740px,
+    lg: 1280px,
+    xl: 1380px,
+    ) !default;
+
+$spacer: 1rem !default;
+$spacers: (
+    ) !default;
+$spacers: map-merge((0: 0,
+            1: $spacer * 0.25,
+            2: $spacer * 0.5,
+            3: $spacer,
+            4: $spacer * 1.5,
+            5: $spacer * 3,
+            6: $spacer * 4,
+            7: $spacer * 5,
+            8: $spacer * 6,
+            9: $spacer * 7,
+            10: $spacer * 10,
+            11: $spacer * 11,
+            12: $spacer * 12,
+            13: $spacer * 13,
+            14: $spacer * 14,
+            15: $spacer * 15,
+        ),
+        $spacers
+);
+
+$font-sizes: (
+    1: 6rem,
+    // 96px
+    2: 5rem,
+    // 80px
+    3: 4.6875rem,
+    // 75px
+    4: 4.5625rem,
+    // 73px
+    5: 4.375rem,
+    // 70px
+    6: 4rem,
+    // 64px
+    7: 3.75rem,
+    // 60px
+    8: 3.5625rem,
+    // 57px
+    9: 3.375rem,
+    // 54px
+    10: 3.125rem,
+    // 50px
+    11: 2.8125rem,
+    // 45px
+    12: 2.6875rem,
+    // 43px
+    13: 2.5rem,
+    // 40px
+    14: 2.25rem,
+    // 36px
+    15: 2.0625rem,
+    // 33px
+    16: 1.9375rem,
+    // 31px
+    17: 1.875rem,
+    // 30px
+    18: 1.6875rem,
+    // 27px
+    19: 1.5625rem,
+    // 25px
+    20: 1.4375rem,
+    // 23px
+    21: 1.3125rem,
+    // 21px
+    22: 1.25rem,
+    // 20px
+    23: 1.125rem,
+    // 18px
+    24: 1rem,
+    // 16px
+    25: 0.875rem,
+    // 14px
+    26: 0.75rem,
+    // 12px
+);
+
+$form-group-margin-bottom: 0 !default;
+$enable-negative-margins: true;
