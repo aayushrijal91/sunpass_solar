@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: $font-body;
-    color: $dark-grey;
+    color: $dark;
     font-weight: 400;
     margin: 0 auto;
     overflow-x: hidden;
@@ -42,6 +42,7 @@ img {
     border-width: 1px;
     border-style: solid;
 }
+
 
 // Rounded buttons
 @for $i from 1 through 10 {
@@ -87,12 +88,16 @@ h6 {
 
 // letter spacing
 
-.letter-spacing-03 {
-    letter-spacing: 0.03em;
+.letter-spacing-n212 {
+    letter-spacing: -2.12px;
 }
 
-.letter-spacing-04 {
-    letter-spacing: 0.04em;
+.letter-spacing-n23 {
+    letter-spacing: -2.3px;
+}
+
+.letter-spacing-n074 {
+    letter-spacing: -0.74px;
 }
 
 .letter-spacing-095 {
