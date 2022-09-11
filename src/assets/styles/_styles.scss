@@ -58,6 +58,47 @@ header {
             }
         }
     }
+
+    &.home_header {
+        background: imgUrl("banner-oval.png") top left;
+
+        .banner {
+            padding: 108px 0 430px;
+            background: imgUrl("banner-home.png") center bottom;
+            position: relative;
+
+            .sunpass_passport {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}
+
+.homepage {
+    section.section_1 {
+        background: imgUrl("homepage_section_1.png") right center $secondary;
+        padding: 99px 0 27px;
+
+        .serial_no {
+            height: 54px;
+            width: 54px;
+            background: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.65rem;
+            font-weight: 700;
+            border-radius: 50%;
+            color: $dark-blue;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+                height: 34px;
+                width: 34px;
+            }
+        }
+    }
 }
 
 footer {
@@ -97,7 +138,7 @@ footer {
             li {
                 font-size: 0.875rem;
                 list-style: none;
-                
+
                 a {
                     font-family: $font-roboto;
                     color: $white;
@@ -120,7 +161,7 @@ footer {
         font-size: 0.875rem;
         padding: 24px 0;
 
-        .footer_bottom_menu ul{
+        .footer_bottom_menu ul {
             display: flex;
             padding-inline-start: 0;
             justify-content: space-between;

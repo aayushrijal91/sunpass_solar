@@ -6,6 +6,7 @@ $primary-light: #19BE60;
 $yellow: #FFC500;
 $orange: #FF6C00;
 $blue: #3371F2;
+$dark-blue: #004994;
 $black: #000000;
 $dark: #19191B;
 $dark-grey: #333333;
@@ -24,6 +25,7 @@ $theme-colors: map-merge(("primary":$primary,
             "yellow":$yellow,
             "orange":$orange,
             "blue":$blue,
+            "dark-blue":$dark-blue,
             "black":$black,
             "dark":$dark,
             "dark-grey":$dark-grey,

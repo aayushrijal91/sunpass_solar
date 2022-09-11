@@ -1,4 +1,27 @@
+<?php $banner = get_field("banner"); ?>
 <header class="home_header">
     <?php get_template_part('parts/section', 'nav'); ?>
-
+    <div class="banner">
+        <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 text-center">
+                    <img src="<?= $banner['logo']['url'] ?>" alt="<?= $banner['logo']['alt'] ?>">
+                </div>
+                <div class="col">
+                    <h1 class="fs-9 fw-900"><?= $banner['heading'] ?></h1>
+                    <h2 class="fs-9 fw-500"><?= $banner['sub_heading'] ?></h2>
+                    <div class="fs-17 text-grey fs-500 py-2"><?= $banner['description'] ?></div>
+                    <div class="row pt-4">
+                        <div class="col-auto">
+                            <a href="<?= $banner['button_1']['url'] ?>" class="btn btn-orange text-white px-4"><?= $banner['button_1']['title'] ?></a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="<?= $banner['button_2']['url'] ?>" class="btn btn-white bordered border-orange text-orange px-4"><?= $banner['button_2']['title'] ?></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
