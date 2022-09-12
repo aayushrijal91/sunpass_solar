@@ -156,8 +156,42 @@ get_template_part('parts/section', 'banner_home');
         <img src="<?= get_template_directory_uri() ?>/images/lib/solar-installation.png" alt="Solar Installation" class="w-100">
     </section>
     <section class="section_4">
-        <?php get_template_part('parts/section', 'brands'); ?>
-
+        <div class="section_4_1">
+            <?php get_template_part('parts/section', 'brands'); ?>
+        </div>
+        <div class="section_4_2">
+            <?php get_template_part('parts/section', 'sustainability'); ?>
+        </div>
+        <div class="section_4_3">
+            <div class="container">
+                <img src="<?= get_template_directory_uri() ?>/images/lib/solar-panel-demo.jpg" alt="Solar panel demo" class="w-100">
+            </div>
+        </div>
+        <div class="section_4_4">
+            <!-- To be replaced by FAQ accordion -->
+            <div class="container">
+                <img src="<?= get_template_directory_uri() ?>/images/lib/faq-dummy.png" alt="Solar panel demo" class="w-100">
+            </div>
+        </div>
+        <div class="section_4_5">
+            <?php $section_4 = get_field('section_4'); ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-orange fs-5 letter-spacing-n23 fw-700"><?= $section_4['title'] ?></div>
+                        <div class="row pt-5 pt-xxl-6">
+                            <div class="col-auto">
+                                <a href="<?= $section_4['button_1']['url'] ?>" class="btn bordered border-secondary text-secondary px-4 px-xl-5"><?= $section_4['button_1']['title'] ?></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="<?= $section_4['button_2']['url'] ?>" class="btn btn-secondary text-white px-4 px-xl-5"><?= $section_4['button_2']['title'] ?></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 description"><?= $section_4['description'] ?></div>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 

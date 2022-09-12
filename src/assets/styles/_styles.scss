@@ -167,7 +167,35 @@ header {
     }
 
     section.section_4 {
-        padding: 124px 0;
+        background: imgUrl('homepage_section_4.png') center top;
+        background-size: contain;
+        
+        .section_4_1 {
+            padding: 124px 0;
+        }
+
+        .section_4_2 {
+            padding-top: 50px;
+        }
+
+        .section_4_3 {
+            padding: 93px 0;
+        }
+
+        .section_4_5 {
+            padding: 400px 0 175px;
+
+            .description {
+                font-size: 1.25rem;
+                line-height: 2;
+                color: $light-grey;
+                letter-spacing: -0.66px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+            }
+        }
     }
 }
 
@@ -279,6 +307,20 @@ footer {
             align-items: center;
             justify-content: center;
             text-align: center;
+        }
+    }
+}
+
+// Sustainability
+
+.sustainability {
+    .description_text {
+        color: $light-grey;
+        font-size: 1.125rem;
+        line-height: 2;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
         }
     }
 }
