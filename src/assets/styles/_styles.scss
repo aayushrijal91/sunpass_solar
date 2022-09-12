@@ -160,6 +160,15 @@ header {
             }
         }
     }
+
+    section.section_3 {
+        padding-top: 178px;
+        background: imgUrl("homepage_section_3.png") left center;
+    }
+
+    section.section_4 {
+        padding: 124px 0;
+    }
 }
 
 footer {
@@ -233,6 +242,43 @@ footer {
                 list-style: none;
                 text-align: center;
             }
+        }
+    }
+}
+
+// Styling for parts
+
+.brands {
+    .heading {
+        font-size: 1.125rem;
+        color: $light-grey;
+        font-weight: 500;
+    }
+
+    .button {
+        color: $yellow;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    .horizontal_line {
+        height: 2px;
+        background: #EAE9F2;
+        width: 100%;
+    }
+
+    .brands_slider {
+        .slick-track {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slick-slide {
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
     }
 }

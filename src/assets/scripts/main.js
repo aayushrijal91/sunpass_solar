@@ -15,6 +15,11 @@ jQuery(function ($) {
                     $('#triggerSlideNav').on('click', function() {
                         $('.slide-nav').addClass('nav-open');
                     });
+
+                    $('.brands_slider').slick({
+                        slidesToShow: 8,
+                        arrow: false,
+                    })
                 });
             }, // end misc
         }, // end ui

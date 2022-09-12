@@ -135,6 +135,30 @@ get_template_part('parts/section', 'banner_home');
 
         </div>
     </section>
+    <section class="section_3">
+        <div class="container">
+            <?php $section_3 = get_field("section_3"); ?>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="fs-3 fw-700 letter-spacing-n23 line-height-4 pb-6"><?= $section_3['title'] ?></div>
+                    <div class="d-flex">
+                        <a href="<?= $section_3['button']['url'] ?>" class="btn btn-orange text-white px-4 px-xxl-5"><?= $section_3['button']['title'] ?></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="fs-20 text-light-grey line-height-5">
+                        <?= $section_3['description'] ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="<?= get_template_directory_uri() ?>/images/lib/solar-installation.png" alt="Solar Installation" class="w-100">
+    </section>
+    <section class="section_4">
+        <?php get_template_part('parts/section', 'brands'); ?>
+
+    </section>
 </div>
 
 <?php
