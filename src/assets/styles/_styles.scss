@@ -73,6 +73,17 @@ header {
             }
         }
     }
+
+    &.subpage_header {
+        .banner {
+            background: imgUrl("subpage_banner.png") left center;
+            padding: 110px 0;
+
+            .heading {
+
+            }
+        }
+    }
 }
 
 .homepage {
