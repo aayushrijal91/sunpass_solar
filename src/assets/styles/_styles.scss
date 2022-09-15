@@ -227,7 +227,52 @@ header {
 }
 
 .aboutus_page {
+    .section_1 {
+        padding-top: 208px;
+        background: imgUrl('aboutus_section_1.png') center top;
+        background-size: cover;
+    }
 
+    .section_2 {
+        padding: 163px 0;
+        letter-spacing: -0.84px;
+        font-size: 1.75rem;
+        line-height: 1.78;
+        font-weight: 500;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+        }
+    }
+
+    .section_3 {
+        .description {
+            font-weight: 500;
+            letter-spacing: -0.74px;
+            line-height: 1.69;
+            font-size: 1.625rem;
+            color: $light-grey;
+            padding: 33px 0;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
+
+            strong {
+                font-weight: 900;
+                color: $orange;
+            }
+        }
+    }
+
+    .faq_wrapper {
+        background: $secondary;
+        padding: 150px 0;
+    }
+
+    .brands_wrapper {
+        padding: 162px 0;
+    }
 }
 
 footer {
