@@ -8,7 +8,8 @@ get_header();
 get_template_part('parts/section','banner');
 ?>
 
-<div class="container">
+<div class="aboutus_page">
+    
 </div>
 
 <?php get_footer(); ?>
