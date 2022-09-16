@@ -168,10 +168,7 @@ get_template_part('parts/section', 'banner_home');
             </div>
         </div>
         <div class="section_4_4">
-            <!-- To be replaced by FAQ accordion -->
-            <div class="container">
-                <img src="<?= get_template_directory_uri() ?>/images/lib/faq-dummy.png" alt="Solar panel demo" class="w-100">
-            </div>
+            <?php get_template_part('parts/section', 'faq'); ?>
         </div>
         <div class="section_4_5">
             <?php $section_4 = get_field('section_4'); ?>
