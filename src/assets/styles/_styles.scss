@@ -227,43 +227,56 @@ header {
 }
 
 .aboutus_page {
-    .section_1 {
-        padding-top: 208px;
-        background: imgUrl('aboutus_section_1.png') center top;
-        background-size: cover;
-    }
+    .top_section_wrapper {
+        background: imgUrl('aboutus_background.png') right 90%;
 
-    .section_2 {
-        padding: 163px 0;
-        letter-spacing: -0.84px;
-        font-size: 1.75rem;
-        line-height: 1.78;
-        font-weight: 500;
-
-        @include media-breakpoint-down(sm) {
-            font-size: 0.875rem;
+        .section_1 {
+            padding-top: 208px;
+            background: imgUrl('aboutus_section_1.png') center top;
+            background-size: cover;
         }
-    }
-
-    .section_3 {
-        .description {
+    
+        .section_2 {
+            padding: 163px 0;
+            letter-spacing: -0.84px;
+            font-size: 1.75rem;
+            line-height: 1.78;
             font-weight: 500;
-            letter-spacing: -0.74px;
-            line-height: 1.69;
-            font-size: 1.625rem;
-            color: $light-grey;
-            padding: 33px 0;
-
+    
             @include media-breakpoint-down(sm) {
                 font-size: 0.875rem;
             }
-
-            strong {
-                font-weight: 900;
-                color: $orange;
+        }
+    
+        .section_3 {
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: contain;
+    
+            .description {
+                font-weight: 500;
+                letter-spacing: -0.74px;
+                line-height: 1.69;
+                font-size: 1.625rem;
+                color: $light-grey;
+                padding: 33px 0;
+    
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+    
+                strong {
+                    font-weight: 900;
+                    color: $orange;
+                }
             }
         }
+
+        .section_4 {
+            padding: 163px 0;
+        }
     }
+
 
     .faq_wrapper {
         background: $secondary;
@@ -271,6 +284,7 @@ header {
     }
 
     .brands_wrapper {
+        background: $white;
         padding: 162px 0;
     }
 }
