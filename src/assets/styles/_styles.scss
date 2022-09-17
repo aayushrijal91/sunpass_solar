@@ -76,7 +76,7 @@ header {
 
     &.subpage_header {
         .banner {
-            background: imgUrl("subpage_banner.png") left center;
+            background: imgUrl("subpage_banner.png") left bottom;
             padding: 110px 0;
 
             .heading {}
@@ -110,13 +110,12 @@ header {
     }
 
     section.section_2 {
-        background: imgUrl('homepage_section_2.png') center bottom;
-        background-size: contain;
+        background: imgUrl('homepage_section_2_globe.png') right 43%;
 
         .section_2_1 {
-            background: imgUrl("section_2_1.png");
-            background-size: cover;
-            padding: 187px 0;
+            background: imgUrl('white-curve-1.png') center bottom rgba(2, 121, 182, 0.05);
+            background-size: contain;
+            padding: 187px 0 191px;
         }
 
         .section_2_2 {
@@ -141,9 +140,12 @@ header {
 
         .section_2_4 {
             padding: 280px 0 268px;
+            background: imgUrl('white-curve-2.png') center top rgba(19, 152, 76, 0.05);
+            background-size: contain;
         }
 
         .section_2_5 {
+            background: rgba(19, 152, 76, 0.05);
             padding: 0 0 223px;
 
             .description {
@@ -175,49 +177,51 @@ header {
         background: imgUrl("homepage_section_3.png") left center;
     }
 
-    section.section_4 {
-        background: imgUrl('homepage_section_4.png') center top;
+    section.parts {
+        background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
+        ;
         background-size: contain;
+        padding-bottom: 265px;
 
-        .section_4_1 {
+        .part_1 {
             padding: 124px 0;
         }
 
-        .section_4_2 {
+        .part_2 {
             padding-top: 50px;
         }
 
-        .section_4_3 {
+        .part_3 {
             padding: 93px 0 43px;
         }
+    }
 
-        .section_4_5 {
-            padding: 400px 0 175px;
+    section.section_4 {
+        padding: 156px 0 175px;
 
-            .description {
-                font-size: 1.25rem;
-                line-height: 2;
-                color: $light-grey;
-                letter-spacing: -0.66px;
+        .description {
+            font-size: 1.25rem;
+            line-height: 2;
+            color: $light-grey;
+            letter-spacing: -0.66px;
 
-                @include media-breakpoint-down(sm) {
-                    font-size: 0.875rem;
-                }
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
             }
         }
     }
 }
 
 .benefitsOfSolar_page {
-    .section_1 {
-        background: imgUrl("benefitsOfSolar_section_1.png") center top;
-        background-size: cover;
+    section.section_1 {
+        background: imgUrl('white-curve-2.png') center top rgba(255, 108, 0, 0.04);
+        background-size: contain;
         padding: 98px 0 0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         position: relative;
     }
 
-    .section_2 {
+    section.section_2 {
         padding: 105px 0 99px;
         background: $white;
 
@@ -228,6 +232,103 @@ header {
             color: $secondary;
             padding-bottom: 105px;
         }
+
+        .description {
+            color: $light-grey;
+            font-size: 1.25rem;
+            line-height: 2;
+            font-weight: 500;
+            letter-spacing: -0.66px;
+            padding: 39px 0 35px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
+
+            ul {
+                list-style: none;
+                padding-inline-start: 1.5rem;
+
+                li {
+                    &::before {
+                        content: "\2022";
+                        color: $orange;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 2rem;
+                        margin-left: -1.5rem;
+                    }
+                }
+            }
+
+            &.two-columns ul {
+                column-count: 2;
+            }
+        }
+    }
+
+    section.section_3 {
+        padding: 297px 0 135px;
+        background: imgUrl('white-curve-2.png') center top #F2F8FB;
+
+        .section_3_1 {
+            padding-bottom: 114px;
+
+            .heading {
+                line-height: 1.28;
+            }
+
+            .description {
+                color: $light-grey;
+                letter-spacing: -0.66px;
+                font-size: 1.125rem;
+                line-height: 2;
+                font-size: 500;
+            }
+        }
+
+        .section_3_2 {
+            padding-top: 114px;
+
+            .description {
+                color: $light-grey;
+                letter-spacing: -0.74px;
+                line-height: 2.1;
+                font-size: 1.3125rem;
+                padding: 20px 0 16px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+    section.section_4 {
+        background: $secondary;
+        color: $white;
+        padding: 143px 0;
+
+        .description {
+            font-size: 1.3125rem;
+            padding: 60px 0 44px;
+            letter-spacing: -0.66px;
+            line-height: 1.9;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+                padding: 24px 0;
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .brands_wrapper {
+        padding: 143px 0;
     }
 }
 
@@ -255,8 +356,8 @@ header {
 
         .section_1 {
             padding-top: 208px;
-            background: imgUrl('aboutus_section_1.png') center top;
-            background-size: cover;
+            background: imgUrl('white-curve-2.png') center top #F2F8FB;
+            background-size: contain;
         }
 
         .section_2 {

@@ -9,7 +9,7 @@ get_template_part('parts/section', 'banner');
 ?>
 
 <div class="benefitsOfSolar_page">
-    <div class="section_1">
+    <section class="section_1">
         <?php $section_1 = get_field('section_1'); ?>
         <div class="container">
             <div class="row align-items-center">
@@ -34,13 +34,126 @@ get_template_part('parts/section', 'banner');
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section_2">
+    <section class="section_2">
         <?php $section_2 = get_field('section_2'); ?>
         <div class="container">
             <div class="fs-8 heading"><?= $section_2['hero_heading'] ?></div>
+            <div class="row gx-xxl-6">
+                <div class="col-lg-6">
+                    <div class="text-orange fs-7 fw-700 letter-spacing-n23"><?= $section_2['column_1']['title'] ?></div>
+                    <div class="description two-columns"><?= $section_2['column_1']['description'] ?></div>
+                    <div class="row">
+                        <?php if (isset($section_2['column_1']['button_1']['url'])) : ?>
+                            <div class="col-auto">
+                                <a href="<?= $section_2['column_1']['button_1']['url'] ?>" class="btn bordered border-orange text-orange px-4 px-xxl-5"><?= $section_2['column_1']['button_1']['title'] ?></a>
+                            </div>
+                        <?php endif; ?>
+                        <?php if (isset($section_2['column_1']['button_2']['url'])) : ?>
+                            <div class="col-auto">
+                                <a href="<?= $section_2['column_1']['button_2']['url'] ?>" class="btn btn-orange text-white px-4 px-xxl-5"><?= $section_2['column_1']['button_2']['title'] ?></a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-orange fs-7 fw-700 letter-spacing-n23"><?= $section_2['column_2']['title'] ?></div>
+                    <div class="description"><?= $section_2['column_2']['description'] ?></div>
+                    <div class="row">
+                        <?php if (isset($section_2['column_2']['button_1']['url'])) : ?>
+                            <div class="col-auto">
+                                <a href="<?= $section_2['column_2']['button_1']['url'] ?>" class="btn bordered border-orange text-orange px-4 px-xxl-5"><?= $section_2['column_2']['button_1']['title'] ?></a>
+                            </div>
+                        <?php endif; ?>
+                        <?php if (isset($section_2['column_2']['button_2']['url'])) : ?>
+                            <div class="col-auto">
+                                <a href="<?= $section_2['column_2']['button_2']['url'] ?>" class="btn btn-orange text-white px-4 px-xxl-5"><?= $section_2['column_2']['button_2']['title'] ?></a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section class="section_3">
+        <?php $section_3 = get_field('section_3'); ?>
+        <div class="section_3_1">
+            <?php $section_3_1 = $section_3['section_3_1']; ?>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-11">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="heading fs-5 letter-spacing-n23 text-orange fw-700 line-height-8"><?= $section_3_1['title'] ?></div>
+                                <div class="row pt-5">
+                                    <?php if (isset($section_3_1['button_1']['url'])) : ?>
+                                        <div class="col-auto">
+                                            <a href="<?= $section_3_1['button_1']['url'] ?>" class="btn bordered border-orange text-orange px-4 px-xxl-5"><?= $section_3_1['button_1']['title'] ?></a>
+                                        </div>
+                                    <?php endif; ?>
+                                    <?php if (isset($section_3_1['button_2']['url'])) : ?>
+                                        <div class="col-auto">
+                                            <a href="<?= $section_3_1['button_2']['url'] ?>" class="btn btn-orange text-white px-4 px-xxl-5"><?= $section_3_1['button_2']['title'] ?></a>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <div class="description">
+                                    <?= $section_3_1['description'] ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_3_2">
+            <?php $section_3_2 = $section_3['section_3_2']; ?>
+            <div class="container">
+                <div class="row align-items-center gx-xxl-5">
+                    <div class="col-12 col-lg"><img src="<?= $section_3_2['image']['url'] ?>" alt="<?= $section_3_2['image']['alt'] ?>" class="w-100"></div>
+                    <div class="col-lg-6">
+                        <div class="heading fs-5 letter-spacing-n23 text-dark fw-700 line-height-4"><?= $section_3_2['title'] ?></div>
+                        <div class="description"><?= $section_3_2['description'] ?></div>
+                        <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="Two dots">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_4">
+        <?php $section_4 = get_field('section_4'); ?>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-11">
+                    <div class="heading fs-4 letter-spacing-n23 fw-700 line-height-1"><?= $section_4['title'] ?></div>
+                    <div class="row gx-xxl-10 description">
+                        <div class="col-lg-7"><?= $section_4['description_1'] ?></div>
+                        <div class="col-lg"><?= $section_4['description_2'] ?></div>
+                    </div>
+                    <div class="row">
+                        <?php if (isset($section_4['button_1']['url'])) : ?>
+                            <div class="col-auto">
+                                <a href="<?= $section_4['button_1']['url'] ?>" class="btn bordered border-white text-white px-4 px-xxl-5"><?= $section_4['button_1']['title'] ?></a>
+                            </div>
+                        <?php endif; ?>
+                        <?php if (isset($section_4['button_2']['url'])) : ?>
+                            <div class="col-auto">
+                                <a href="<?= $section_4['button_2']['url'] ?>" class="btn btn-white text-secondary px-4 px-xxl-5"><?= $section_3_1['button_2']['title'] ?></a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="brands_wrapper">
+        <?php get_template_part('parts/section', 'brands'); ?>
     </div>
 </div>
 
