@@ -332,6 +332,126 @@ header {
     }
 }
 
+.howSolarWorks_page {
+    section.section_1 {
+        background: $secondary;
+        position: relative;
+        color: $white;
+        padding: 123px 0;
+
+        .sunpass_passport {
+            position: absolute;
+            right: 0;
+            top: -8rem;
+        }
+
+        .heading {
+            line-height: 1.28;
+        }
+
+        .description {
+            line-height: 2.1;
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: -0.66px;
+
+            @include media-breakpoint-down(sm) {
+                font-weight: 0.875rem;
+            }
+        }
+    }
+
+    section.section_2 {
+        background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
+        background-size: contain;
+
+        .section_2_1 {
+            padding: 178px 0;
+
+            .heading {
+                line-height: 1.125;
+            }
+
+            .description {
+                color: $light-grey;
+                line-height: 2;
+                font-size: 1.4375rem;
+                font-weight: 500;
+                padding-top: 55px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-inline-start: 3.5rem;
+
+                    li {
+                        &::before {
+                            content: "\2022";
+                            color: $orange;
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 2rem;
+                            margin-left: -1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq_wrapper {
+            padding-bottom: 236px;
+        }
+    }
+
+    section.section_3 {
+        background: imgUrl('aboutus_background.png') right center;
+
+        .section_3_1 {
+            padding: 163px 0 0;
+
+            .heading {
+                text-align: center;
+                letter-spacing: -2.4px;
+                line-height: 1.12;
+                padding-bottom: 105px;
+            }
+
+            .description {
+                color: $light-grey;
+                font-weight: 500;
+                letter-spacing: -0.84px;
+                font-size: 1.4375rem;
+                line-height: 1.74;
+
+                ul {
+                    list-style: none;
+                    padding-inline-start: 2.5rem;
+    
+                    li {
+                        padding: 16px 0;
+                        
+                        &::before {
+                            content: "\2022";
+                            color: $orange;
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 2rem;
+                            margin-left: -1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .brands_wrapper {
+            padding: 170px 0;
+        }
+    }
+}
+
 .faq_page {
     .faq_wrapper {
         background: $secondary;
