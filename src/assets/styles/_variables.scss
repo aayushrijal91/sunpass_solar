@@ -13,6 +13,7 @@ $dark-grey: #333333;
 $grey: #666666;
 $light-grey: #696871;
 $fade-grey: #818493;
+$lighter-grey: #A19E9E;
 $light: #f3faf6;
 $white: #ffffff;
 
@@ -32,6 +33,7 @@ $theme-colors: map-merge(("primary":$primary,
             "dark-grey":$dark-grey,
             "grey":$grey,
             "light-grey":$light-grey,
+            "lighter-grey":$lighter-grey,
             "fade-grey":$fade-grey,
             "light":$light,
             "white":$white ),

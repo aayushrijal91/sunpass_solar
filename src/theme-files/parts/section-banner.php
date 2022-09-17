@@ -6,7 +6,7 @@
             <div class="row gx-xxl-7">
                 <div class="col-auto">
                     <h1 class="heading fs-9 fw-900">
-                        <?= the_title() ?>
+                        <?= get_field('banner_title') !== null ? get_field('banner_title') : the_title() ?>
                     </h1>
                 </div>
                 <div class="col">

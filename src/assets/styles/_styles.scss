@@ -347,6 +347,7 @@ header {
 
         .heading {
             line-height: 1.28;
+            text-transform: capitalize;
         }
 
         .description {
@@ -429,10 +430,10 @@ header {
                 ul {
                     list-style: none;
                     padding-inline-start: 2.5rem;
-    
+
                     li {
                         padding: 16px 0;
-                        
+
                         &::before {
                             content: "\2022";
                             color: $orange;
@@ -449,6 +450,89 @@ header {
         .brands_wrapper {
             padding: 170px 0;
         }
+    }
+}
+
+.futureOfSolar_page {
+    section.section_1 {
+        background: $secondary;
+        position: relative;
+        color: $white;
+        padding: 123px 0;
+
+        .sunpass_passport {
+            position: absolute;
+            right: 0;
+            top: -8rem;
+        }
+
+        .heading {
+            line-height: 0.9;
+        }
+
+        .description {
+            line-height: 2.1;
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: -0.66px;
+
+            @include media-breakpoint-down(sm) {
+                font-weight: 0.875rem;
+            }
+        }
+    }
+
+    section.section_2 {
+        padding-top: 65px;
+
+        .subtitle {
+            font-size: 1.125rem;
+            line-height: 1.78;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
+        }
+
+        .programs {
+            .program_card {
+                height: 100%;
+                background: rgba(19, 152, 76, 0.06);
+                color: $secondary;
+                padding: 24px;
+
+                .title {
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    letter-spacing: -1px;
+                    line-height: 1;
+                    padding-bottom: 16px;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1rem;
+                    }
+                }
+
+                .description {
+                    font-size: 1rem;
+                    letter-spacing: -0.66px;
+                    line-height: 1.46875;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+
+    section.section_3 {
+        padding-bottom: 65px;
+        background: imgUrl('linear-border.png') right bottom;
+    }
+
+    section.faq_wrapper {
+        padding: 19px 0 70px;
     }
 }
 
