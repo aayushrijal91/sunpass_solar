@@ -620,7 +620,7 @@ header {
 .contactus_page {
     background-color: $white;
     position: relative;
-    padding: 117px 0;
+    padding: 117px 0 191px;
 
     .sunpass_passport {
         position: absolute;
@@ -648,7 +648,7 @@ header {
             textarea.form-control {
                 border: 2px solid $lightest-grey;
                 border-radius: 6px;
-                min-height: 50px;
+                height: 50px;
                 font-size: 0.875rem;
                 color: $dark-grey;
                 padding: 6px 33px;
@@ -668,6 +668,25 @@ header {
                 }
             }
         }
+    }
+}
+
+.services_page {
+    section.section_1 {
+        background: rgba(19, 152, 76, 0.05);
+        padding: 88px 0;
+        text-align: center;
+    }
+
+    section.section_2 {
+        background: imgUrl('faded-solar.png') right center #087b40;
+        background-size: contain;
+        padding: 100px 0 155px;
+        color: $white;
+    }
+
+    section.brands_wrapper {
+        padding: 53px 0;
     }
 }
 

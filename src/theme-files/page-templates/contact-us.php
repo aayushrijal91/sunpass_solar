@@ -18,7 +18,7 @@ get_template_part('parts/section', 'banner');
                     if (have_rows('socials', 'options')) :
                         $index = 1;
                         while (have_rows('socials', 'options')) : the_row();
-                            $icon = get_sub_field('icon');
+                            $icon = get_sub_field('icon_2');
                             $url = get_sub_field('url');
                     ?>
                             <div class="col-auto order-<?= $index == 1 ? 2 : 1 ?>">
@@ -53,8 +53,7 @@ get_template_part('parts/section', 'banner');
             </div>
             <div class="col-lg-6">
                 <div class="form_wrapper">
-                <?= do_shortcode('[contact-form-7 id="390" title="Contact Us"]') ?>
-                    
+                    <?= do_shortcode('[contact-form-7 id="390" title="Contact Us"]') ?>
                 </div>
             </div>
         </div>
