@@ -152,7 +152,7 @@ get_template_part('parts/section', 'banner');
         </div>
     </section>
 
-    <div class="brands_wrapper">
+    <div class="brands_wrapper text-light-grey">
         <?php get_template_part('parts/section', 'brands'); ?>
     </div>
 </div>

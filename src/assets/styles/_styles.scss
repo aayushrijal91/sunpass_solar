@@ -683,10 +683,57 @@ header {
         background-size: contain;
         padding: 100px 0 155px;
         color: $white;
+
+        .services_list {
+            .service_card {
+                text-decoration: none;
+                color: $white;
+                letter-spacing: -0.01em;
+
+                .title {
+                    font-weight: 700;
+                    line-height: 1.35;
+                }
+
+                .description {
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 2;
+                    padding: 16px 0;
+                }
+            }
+        }
     }
 
     section.brands_wrapper {
         padding: 53px 0;
+    }
+}
+
+.innerService_page {
+    section.section_1 {
+        background: rgba(19, 152, 76, 0.05);
+        position: relative;
+        padding: 80px 0 146px;
+
+        .heading {
+            line-height: 1.23;
+        }
+
+        .service_house {
+            position: absolute;
+
+        }
+    }
+
+    section.section_2 {
+        background: $secondary;
+        color: $white;
+        padding: 80px 0 94px;
+
+        .brands_wrapper {
+            color: $white !important;
+        }
     }
 }
 
@@ -770,7 +817,6 @@ footer {
 .brands {
     .heading {
         font-size: 1.125rem;
-        color: $light-grey;
         font-weight: 500;
     }
 

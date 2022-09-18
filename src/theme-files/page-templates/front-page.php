@@ -155,7 +155,7 @@ get_template_part('parts/section', 'banner_home');
         <img src="<?= get_template_directory_uri() ?>/images/lib/solar-installation.png" alt="Solar Installation" class="w-100">
     </section>
     <section class="parts">
-        <div class="part_1">
+        <div class="part_1 text-light-grey">
             <?php get_template_part('parts/section', 'brands'); ?>
         </div>
         <div class="part_2">

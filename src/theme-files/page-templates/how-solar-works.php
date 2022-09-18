@@ -69,7 +69,7 @@ get_template_part('parts/section', 'banner');
                 </div>
             </div>
         </div>
-        <div class="brands_wrapper">
+        <div class="brands_wrapper text-light-grey">
             <?php get_template_part('parts/section', 'brands'); ?>
         </div>
     </section>
