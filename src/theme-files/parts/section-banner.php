@@ -14,7 +14,7 @@ if ((get_field('banner_title') !== null) && (empty(get_field('banner_title')) ==
         <div class="container">
             <div class="row gx-xxl-7 align-items-center">
                 <div class="col-auto">
-                    <h1 class="heading fs-9 fw-900">
+                    <h1 class="heading fs-9 fw-700">
                         <?= $banner_title; ?>
                     </h1>
                 </div>

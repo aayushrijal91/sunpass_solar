@@ -871,6 +871,259 @@ header {
     }
 }
 
+.areas_page {
+    section.areatop {
+        padding: 4rem 0;
+
+        @media screen and (max-width: 576px) {
+            padding: 2.25rem 0;
+        }
+
+        .sub-heading {
+            font-size: 1.125rem;
+            color: #3c4a5a;
+            font-weight: normal;
+
+            @media screen and (max-width: 576px) {
+                font-size: 0.75rem;
+            }
+
+            a {
+                color: #3c4a5a;
+                font-weight: bold;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        .alphbetwrap {
+            padding: 0;
+
+            .areas_allSearch {
+                display: inline-block;
+                background-color: $white;
+                text-align: center;
+                background-color: $white;
+                margin-right: 1.2rem;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 0.713rem 48px;
+                color: #3c4a5a;
+                cursor: pointer;
+                margin-right: 0.214rem;
+                border-radius: 2px;
+            }
+
+            .areas_alphabet {
+                display: inline-block;
+                background-color: $white;
+                color: #3c4a5a;
+                text-align: center;
+                margin-bottom: 0.5rem;
+                margin-right: 0.214rem;
+                cursor: pointer;
+                font-size: 1rem;
+                padding: 0.713rem 1.45rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                transition: 0.35s all ease;
+                border-radius: 2px;
+
+                &:hover {
+                    color: $white;
+                    background-color: $primary;
+                }
+            }
+
+            .active {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+
+    section.areawrap {
+        padding: 3.25rem 0;
+
+        @media screen and (max-width: 576px) {
+            padding: 2.75rem 0;
+        }
+
+        .all-list {
+            font-size: 5rem;
+
+            @media screen and (max-width: 576px) {
+                font-size: 3.125rem;
+            }
+
+            span {
+                color: $black;
+            }
+        }
+
+        .arealistwrap {
+            .arealist {
+                background: #fafafa;
+                padding: 51px;
+
+                .suburb_link {
+                    text-decoration: none;
+                }
+                
+                .alphabet-title {
+                    font-size: 1.875rem;
+                    color: #1b2039;
+                    margin-bottom: 1rem;
+                }
+            }
+
+
+            ul {
+                margin-bottom: 0;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 0 2rem;
+                padding-left: 0;
+
+                li {
+                    display: inline-block;
+                    padding: 0.25rem 0;
+
+                    a {
+                        font-size: 0.938rem;
+                        color: $black;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .show-more {
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+
+            .areahide {
+                display: none;
+            }
+
+            .mbottom {
+                margin-bottom: 7.2rem;
+
+                @media screen and (max-width: 576px) {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .seemore {
+                color: #959595;
+                font-style: italic;
+                text-decoration: underline;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        .arealisthide {
+            display: none;
+        }
+
+        h2 {
+            font-size: 3.6rem;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 7rem;
+        }
+
+        .areas_loadMoreWrap {
+            position: relative;
+            text-align: center;
+            padding: 3rem 0 1.6rem;
+
+            a {
+                width: auto;
+                display: inline-flex;
+            }
+        }
+    }
+
+    .areas_droplist {
+        position: relative;
+        z-index: 9;
+    }
+
+    .areas_droplist>.caption {
+        border: 1px solid #c4c4c4;
+        padding: 11px 24px;
+        border-radius: 0;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0.5rem;
+            top: 35%;
+            border: solid $primary;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            transition: all 0.35s ease;
+        }
+    }
+
+    .areas_droplist>.list {
+        position: absolute;
+        background-color: #f2f2f2;
+        width: 100%;
+        border-radius: 0 0 3px 3px;
+        display: none;
+    }
+
+    .areas_droplist>.list>.item {
+        padding: 11px 24px;
+        background-color: #cecece;
+        cursor: pointer;
+    }
+
+    .areas_droplist>.list>.item.selected {
+        font-weight: bold;
+    }
+
+    .areas_droplist>.caption:hover,
+    .areas_droplist>.list>.item:hover {
+        background-color: $primary;
+        color: #fff;
+    }
+
+    .areas_droplist.open>.caption {
+        border-radius: 3px 3px 0 0;
+        border-bottom: solid 1px #999;
+    }
+
+    .areas_droplist.open>.list {
+        display: block;
+        z-index: 99;
+    }
+
+    section.map {
+        iframe {
+            height: 696px;
+            width: 100%;
+            margin-bottom: -5px;
+        }
+    }
+}
+
 footer {
     background: imgUrl('footer.png') right bottom, linear-gradient(136.9deg, $tertiary 31.95%, $secondary 83.91%);
     color: $white;
