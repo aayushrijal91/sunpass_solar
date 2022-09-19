@@ -143,7 +143,7 @@ get_template_part('parts/section', 'banner');
                         <?php endif; ?>
                         <?php if (isset($section_4['button_2']['url'])) : ?>
                             <div class="col-auto">
-                                <a href="<?= $section_4['button_2']['url'] ?>" class="btn btn-white text-secondary px-4 px-xxl-5"><?= $section_3_1['button_2']['title'] ?></a>
+                                <a href="<?= $section_4['button_2']['url'] ?>" class="btn btn-white text-secondary px-4 px-xxl-5"><?= $section_4['button_2']['title'] ?></a>
                             </div>
                         <?php endif; ?>
                     </div>
