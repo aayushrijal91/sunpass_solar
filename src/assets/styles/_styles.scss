@@ -179,16 +179,22 @@ header {
 
     section.parts {
         background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
-        ;
         background-size: contain;
         padding-bottom: 265px;
+
 
         .part_1 {
             padding: 124px 0;
         }
 
         .part_2 {
+            position: relative;
             padding-top: 50px;
+
+            .globe-left {
+                position: absolute;
+                z-index: -1;
+            }
         }
 
         .part_3 {
@@ -971,7 +977,7 @@ header {
                 .suburb_link {
                     text-decoration: none;
                 }
-                
+
                 .alphabet-title {
                     font-size: 1.875rem;
                     color: #1b2039;
@@ -1120,6 +1126,57 @@ header {
             height: 696px;
             width: 100%;
             margin-bottom: -5px;
+        }
+    }
+}
+
+.suburb_page {
+
+    section.section_1 {
+        background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
+
+        .section_1_1 {
+            padding: 104px 0;
+            position: relative;
+
+            .globe-left {
+                position: absolute;
+                z-index: -1;
+            }
+        }
+
+        .heading {
+            line-height: 1.2;
+        }
+
+        @include media-breakpoint-down(sm) {
+            .subheading {
+                font-size: 1rem;
+            }
+
+            .description {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    .faq_wrapper {
+        padding-top: 93px;
+    }
+
+    section.section_2 {
+        padding: 66px 0 92px;
+
+        .heading {
+            line-height: 1.125;
+            padding-bottom: 31px;
+        }
+
+        .description {
+            font-size: 1.25rem;
+            letter-spacing: -0.74px;
+            line-height: 1.75;
+            color: $light-grey;
         }
     }
 }

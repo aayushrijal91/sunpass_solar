@@ -160,6 +160,7 @@ get_template_part('parts/section', 'banner_home');
         </div>
         <div class="part_2">
             <?php get_template_part('parts/section', 'sustainability'); ?>
+            <img src="<?= get_template_directory_uri() ?>/images/lib/globe-left.png" alt="Globe" class="globe-left">
         </div>
         <div class="part_3">
             <div class="container">

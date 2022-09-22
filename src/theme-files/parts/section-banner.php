@@ -20,16 +20,12 @@ if ((get_field('banner_title') !== null) && (empty(get_field('banner_title')) ==
                 </div>
                 <div class="col">
                     <div class="row align-items-center">
-                        <?php if (isset($banner_buttons['button_1']['url'])) : ?>
-                            <div class="col-auto">
-                                <a href="<?= $banner_buttons['button_1']['url'] ?>" class="btn btn-orange text-white px-4"><?= $banner_buttons['button_1']['title'] ?></a>
-                            </div>
-                        <?php endif; ?>
-                        <?php if (isset($banner_buttons['button_2']['url'])) : ?>
-                            <div class="col-auto">
-                                <a href="<?= $banner_buttons['button_2']['url'] ?>" class="btn btn-white bordered border-orange text-orange px-4"><?= $banner_buttons['button_2']['title'] ?></a>
-                            </div>
-                        <?php endif; ?>
+                        <div class="col-auto">
+                            <a href="<?= isset($banner_buttons['button_1']['url']) ? $banner_buttons['button_1']['url'] : "#" ?>" class="btn btn-orange text-white px-4"><?= isset($banner_buttons['button_1']['title']) ? $banner_buttons['button_1']['title'] : "Get Started" ?></a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="<?= isset($banner_buttons['button_2']['url']) ? $banner_buttons['button_2']['url'] : "#" ?>" class="btn btn-white bordered border-orange text-orange px-4"><?= isset($banner_buttons['button_1=2']['title']) ? $banner_buttons['button_2']['title'] : "Learn More" ?></a>
+                        </div>
                     </div>
                 </div>
             </div>
