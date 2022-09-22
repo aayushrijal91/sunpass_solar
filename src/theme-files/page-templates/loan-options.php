@@ -98,25 +98,45 @@ get_template_part('parts/section', 'banner');
         </div>
     </section>
     <section class="section_3">
+        <?php $section_3 = get_field('section_3'); ?>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11">
                     <div class="pb-5 pb-xl-7 fs-5 text-capitalize fw-900 line-height-1 letter-spacing-n143 text-center">
-                        Work with us how ever you like
+                        <?= $section_3['hero_title'] ?>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-lg">
-                            <div class="row align-items-center">
+                            <div class="row">
                                 <div class="col-auto">
                                     <img src="<?= get_template_directory_uri() ?>/images/icons/application-form.png" alt="">
                                 </div>
-                                <div class="col"></div>
+                                <div class="col text-capitalize">
+                                    <div class="text-secondary fw-700 fs-17"><?= $section_3['application']['title'] ?></div>
+                                    <div class="fs-20 pt-2 pb-3"><?= $section_3['application']['description'] ?></div>
+                                    <div class="d-inline-flex">
+                                        <a href="<?= $section_3['application']['button']['url'] ?>" class="btn btn-secondary text-white px-4 px-xl-5"><?= $section_3['application']['button']['title'] ?></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <div class="vertical_divider"></div>
                         </div>
-                        <div class="col-lg"></div>
+                        <div class="col-lg">
+                            <div class="row gx-xl-5">
+                                <div class="col-auto">
+                                    <img src="<?= get_template_directory_uri() ?>/images/icons/appointment-form.png" alt="">
+                                </div>
+                                <div class="col text-capitalize">
+                                    <div class="text-secondary fw-700 fs-17"><?= $section_3['appointment']['title'] ?></div>
+                                    <div class="fs-21 pt-2 pb-3"><?= $section_3['appointment']['description'] ?></div>
+                                    <div class="d-inline-flex">
+                                        <a href="<?= $section_3['appointment']['button']['url'] ?>" class="btn btn-secondary text-white px-4 px-xl-5 text-capitalize"><?= $section_3['appointment']['button']['title'] ?></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

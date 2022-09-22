@@ -53,7 +53,7 @@
                                 <?php wp_nav_menu(array(
                                     'menu' => 'Primary Top Menu',
                                     'menu_class' => 'navbar-nav',
-                                    'item_class' => 'nav-item px-xl-0 px-xl-4',
+                                    'item_class' => 'nav-item px-lg-2 px-xl-4',
                                     'link_class' => 'nav-link',
                                     'container_class' => 'primary_top_menu',
                                     'container_id' => '',
@@ -67,7 +67,7 @@
                             <?php wp_nav_menu(array(
                                 'menu' => 'Primary Menu',
                                 'menu_class' => 'navbar-nav',
-                                'item_class' => 'nav-item px-xl-0 px-xl-4',
+                                'item_class' => 'nav-item px-lg-2 px-xl-4',
                                 'link_class' => 'nav-link',
                                 'container_class' => 'primary_menu',
                                 'container_id' => '',
