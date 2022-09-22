@@ -89,7 +89,7 @@ $the_query = new WP_Query($args);
                     </div>
                 </div>
                 <div class="noresult">No Result Found.</div>
-                <div class="areas_loadMoreWrap "><a href="javascript:void(0)" class="btn btn-secondary text-white px-4 px-xxl-5">Load More</a></div>
+                <div class="areas_loadMoreWrap "><a href="javascript:void(0)" class="btn btn-secondary text-white px-4 px-xl-5">Load More</a></div>
             <?php }
             wp_reset_postdata(); ?>
 

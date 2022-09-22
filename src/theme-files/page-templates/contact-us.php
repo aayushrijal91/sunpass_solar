@@ -11,8 +11,8 @@ get_template_part('parts/section', 'banner');
 <div class="contactus_page">
     <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
     <div class="container">
-        <div class="row justify-content-xxl-between">
-            <div class="col-lg-6 col-xxl-5">
+        <div class="row">
+            <div class="col-lg-6 col-xl-5">
                 <div class="row align-items-center">
                     <?php
                     if (have_rows('socials', 'options')) :

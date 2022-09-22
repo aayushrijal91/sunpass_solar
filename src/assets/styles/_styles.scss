@@ -591,7 +591,7 @@ header {
                 font-weight: 500;
                 letter-spacing: -0.74px;
                 line-height: 1.69;
-                font-size: 1.625rem;
+                font-size: 1.525rem;
                 color: $light-grey;
                 padding: 33px 0;
 
@@ -1178,6 +1178,57 @@ header {
             line-height: 1.75;
             color: $light-grey;
         }
+    }
+}
+
+.loanoptions_page {
+    section.section_1 {
+        background: rgba(19, 152, 76, 0.05);
+        padding: 56px 0;
+        color: $dark-grey;
+        letter-spacing: -0.91px;
+    }
+    
+    section.section_2 {
+        background: imgUrl('loan-options-globe.png') right bottom $secondary;
+        padding: 80px 0 103px;
+        color: $white;
+        letter-spacing: -0.91px;
+
+        .heading {
+            letter-spacing: -1.43px;
+            padding-bottom: 95px;
+        }
+
+        .list {
+            padding-left: 54px;
+            position: relative;
+
+            &::before {
+                content: "";
+                background: $orange;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 1.3rem;
+                border-radius: 50px;
+                left: 0;
+            }
+        }
+    }
+    
+    section.section_3 {
+        padding: 80px 0;
+
+        .vertical_divider {
+            width: 2px;
+            height: 192px;
+            background-color: $lightest-grey;
+        }
+    }
+
+    section.brands_wrapper {
+        padding-bottom: 53px;
     }
 }
 

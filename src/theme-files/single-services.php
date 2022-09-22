@@ -13,7 +13,7 @@ get_template_part('parts/section', 'banner');
                     <div class="heading text-secondary fw-700 fs-8 letter-spacing-n23 text-capitalize"><?= $section_1['title'] ?></div>
                     <div class="text-light-grey line-height-2 fs-22 letter-spacing-n066 pt-3"><?= $section_1['description'] ?></div>
 
-                    <div class="row justify-content-center gx-xl-4 gx-xxl-7 pt-5 pt-xl-6">
+                    <div class="row justify-content-center gx-lg-4 gx-xl-7 pt-5 pt-xl-6">
                         <?php
                         if (have_rows('section_1')) :
                             while (have_rows('section_1')) : the_row();
@@ -24,7 +24,7 @@ get_template_part('parts/section', 'banner');
                         ?>
                                         <div class="col-lg-6">
                                             <div class="description_column">
-                                                <div class="text-orange fw-700 letter-spacing-n23 fs-7 line-height-4"><?= $title ?></div>
+                                                <div class="text-orange fw-700 letter-spacing-n23 fs-10 line-height-4"><?= $title ?></div>
                                                 <div class="text-light-grey fs-22 line-height-2 letter-spacing-n066 pt-4">
                                                     <?= $description ?>
                                                 </div>
@@ -51,7 +51,7 @@ get_template_part('parts/section', 'banner');
             <img src="<?= get_template_directory_uri() ?>/images/background/homepage_section_2_globe.png" alt="Globe" class="globe">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-xl-11 col-xxl-10">
+                    <div class="col-lg-11">
                         <div class="text-center text-capitalize letter-spacing-n143 fw-900 fs-5 pb-4 line-height-1">What do we offer?</div>
                         <?php if ($section_2['choose_template'] == 'Template 1') :
                             $template_1 = $section_2['template_1']; ?>
@@ -60,7 +60,7 @@ get_template_part('parts/section', 'banner');
                                     <div class="col-xl-8 text-center"><?= $template_1['subtitle'] ?></div>
                                 </div>
 
-                                <div class="row align-items-center g-xl-4 g-xxl-5 py-5 py-xl-7">
+                                <div class="row align-items-center g-lg-4 g-xl-5 py-5 py-xl-7">
                                     <div class="col-lg-4">
                                         <div class="heroTitle fw-900 fs-14 text-capitalize"><?= $template_1['hero_text'] ?></div>
                                     </div>
@@ -95,8 +95,8 @@ get_template_part('parts/section', 'banner');
                             <div class="template_2">
                                 <div class="row justify-content-center">
                                     <div class="col-xl-8 text-center"><?= $template_2['subtitle'] ?></div>
-                                    <div class="col-xl-11 col-xxl-9">
-                                        <div class="row g-xl-4 g-xxl-5 pt-5 pt-xl-7">
+                                    <div class="col-lg-11">
+                                        <div class="row g-lg-4 g-xl-5 pt-5 pt-xl-7">
                                             <?php
                                             if (have_rows('section_2')) :
                                                 while (have_rows('section_2')) : the_row();
@@ -166,8 +166,8 @@ get_template_part('parts/section', 'banner');
         <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xxl-11">
-                    <div class="row gx-xxl-5">
+                <div class="col-xl-11">
+                    <div class="row gx-xl-5">
                         <div class="col-lg-5">
                             <div class="fw-700 fs-7 line-height-4 pb-3 text-capitalize"><?= $section_4['title'] ?></div>
                             <div class="row pt-4">
@@ -183,7 +183,7 @@ get_template_part('parts/section', 'banner');
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg pe-xl-5">
                             <div class="description line-height-2 letter-spacing-n066"><?= $section_4['description'] ?></div>
                         </div>
                     </div>

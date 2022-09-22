@@ -53,13 +53,13 @@
                                 <?php wp_nav_menu(array(
                                     'menu' => 'Primary Top Menu',
                                     'menu_class' => 'navbar-nav',
-                                    'item_class' => 'nav-item px-xl-0 px-xxl-4',
+                                    'item_class' => 'nav-item px-xl-0 px-xl-4',
                                     'link_class' => 'nav-link',
                                     'container_class' => 'primary_top_menu',
                                     'container_id' => '',
                                 )); ?>
                                 <div class="ps-4">
-                                    <a href="tel:<?= get_field('phone_number', 'options') ?>" class="btn btn-yellow text-dark rounded-10 py-3 px-md-4 px-xl-2 px-xxl-5 fs-24 fw-500 line-height-1">
+                                    <a href="tel:<?= get_field('phone_number', 'options') ?>" class="btn btn-yellow text-dark rounded-10 py-3 px-md-4 px-xl-2 px-xl-5 fs-24 fw-500 line-height-1">
                                         <?= get_field('phone_number', 'options') ?>
                                     </a>
                                 </div>
@@ -67,7 +67,7 @@
                             <?php wp_nav_menu(array(
                                 'menu' => 'Primary Menu',
                                 'menu_class' => 'navbar-nav',
-                                'item_class' => 'nav-item px-xl-0 px-xxl-4',
+                                'item_class' => 'nav-item px-xl-0 px-xl-4',
                                 'link_class' => 'nav-link',
                                 'container_class' => 'primary_menu',
                                 'container_id' => '',
