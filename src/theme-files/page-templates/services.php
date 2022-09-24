@@ -17,6 +17,7 @@ get_template_part('parts/section', 'banner');
         </div>
     </section>
     <img src="<?= get_template_directory_uri() ?>/images/lib/solar-services.jpg" class="w-100" alt="Solar Services">
+    <?php get_template_part('parts/section', 'brighte'); ?>
     <section class="section_2">
         <?php $section_2 = get_field('section_2'); ?>
         <div class="container">

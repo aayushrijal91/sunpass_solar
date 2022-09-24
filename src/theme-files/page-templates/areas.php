@@ -95,7 +95,7 @@ $the_query = new WP_Query($args);
 
         </div>
     </section>
-
+    <?php get_template_part('parts/section', 'brighte'); ?>
     <section class="map">
         <iframe style="border: 0;" src="<?= get_field('map') ?>" allowfullscreen="allowfullscreen"></iframe>
     </section>

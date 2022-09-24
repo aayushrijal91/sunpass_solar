@@ -63,8 +63,8 @@ header {
         background: imgUrl("banner-oval.png") top left;
 
         .banner {
-            padding: 108px 0 430px;
-            background: imgUrl("banner-home.png") center bottom;
+            padding: 108px 0 330px;
+            background: imgUrl("banner-home.png") right bottom;
             position: relative;
 
             .sunpass_passport {
@@ -1188,7 +1188,7 @@ header {
         color: $dark-grey;
         letter-spacing: -0.91px;
     }
-    
+
     section.section_2 {
         background: imgUrl('loan-options-globe.png') right bottom $secondary;
         padding: 80px 0 103px;
@@ -1216,7 +1216,7 @@ header {
             }
         }
     }
-    
+
     section.section_3 {
         padding: 80px 0;
 
@@ -1343,7 +1343,10 @@ footer {
     }
 }
 
-// Sustainability
+.brighte_promo {
+    background: $orange-light;
+    font-size: 1.875rem;
+}
 
 .sustainability {
     .description_text {

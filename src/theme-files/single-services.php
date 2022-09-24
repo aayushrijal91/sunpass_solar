@@ -1,6 +1,7 @@
 <?php
 get_header();
 get_template_part('parts/section', 'banner');
+get_template_part('parts/section', 'brighte');
 ?>
 
 <div class="innerService_page">

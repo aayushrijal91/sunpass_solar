@@ -6,6 +6,7 @@
  */
 get_header();
 get_template_part('parts/section', 'banner_home');
+get_template_part('parts/section', 'brighte');
 ?>
 
 <div class="homepage">
