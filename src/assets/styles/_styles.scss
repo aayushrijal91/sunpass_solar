@@ -1131,7 +1131,6 @@ header {
 }
 
 .suburb_page {
-
     section.section_1 {
         background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
 
@@ -1229,6 +1228,62 @@ header {
 
     section.brands_wrapper {
         padding-bottom: 53px;
+    }
+}
+
+.propertyType_page {
+    section.products {
+        padding: 44px 0 82px;
+        
+        .description {
+            padding: 40px 0;
+        }
+
+        .nav {
+            .nav-link {
+                background: none;
+                border: 1px solid $orange;
+                border-radius: 0;
+                color: $light-grey;
+                margin: 0 6px;
+                height: 56px;
+                width: 131px;
+                font-size: 1.25rem;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    section.parts {
+        background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
+        background-size: contain;
+        padding-bottom: 265px;
+
+
+        .part_1 {
+            padding: 124px 0;
+        }
+
+        .part_2 {
+            position: relative;
+            padding-top: 50px;
+
+            .globe-left {
+                position: absolute;
+                z-index: -1;
+            }
+        }
+
+        .part_3 {
+            padding: 93px 0 43px;
+        }
     }
 }
 
