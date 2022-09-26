@@ -95,6 +95,29 @@ jQuery(function ($) {
                         $('.areas_droplist > .list > .item').removeClass('active selected');
                         $(this).addClass('selected').parent().parent().removeClass('open').children('.caption').text($(this).text());
                     });
+
+
+                    const slideValue = $('.sliderValue');
+                    const inputSlider = $('.field input');
+                    inputSlider.on('input', function() {
+                        let value = inputSlider.val();
+                        slideValue.html(value);
+                        slideValue.css('left', (value*(96/60)) + "%");
+                    });
+
+                    $("#rebateCalc_submit").on('click',function() {
+                        let state = $('#rebateCalc_state').val();
+                        let postcode = $('#rebateCalc_postcode').val();
+                        let period = $('#rebateCalc_period').val();
+                        let energyUse = $('#rebateCalc_energyUse').val();
+                        let solution = $('#rebateCalc_solution').val();
+
+                        if(!state || !postcode || !period || !solution){
+                            $("#rebateCalc_alert").slideDown();
+                        } else {
+                            $("#rebateCalc_alert").slideUp();
+                        }
+                    });
                 });
             }, // end misc
         }, // end ui

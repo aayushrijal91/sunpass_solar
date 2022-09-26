@@ -78,8 +78,6 @@ header {
         .banner {
             background: imgUrl("subpage_banner.png") left bottom;
             padding: 110px 0;
-
-            .heading {}
         }
     }
 }
@@ -1233,29 +1231,35 @@ header {
 
 .propertyType_page {
     section.products {
-        padding: 44px 0 82px;
-        
-        .description {
-            padding: 40px 0;
-        }
+        background: imgUrl('homepage_section_2_globe.png') right center;
 
-        .nav {
-            .nav-link {
-                background: none;
-                border: 1px solid $orange;
-                border-radius: 0;
-                color: $light-grey;
-                margin: 0 6px;
-                height: 56px;
-                width: 131px;
-                font-size: 1.25rem;
+        .products_inner {
+            padding: 44px 0 82px;
+            background: imgUrl('property-type.png') center top;
+            background-size: contain;
 
-                @include media-breakpoint-down(sm) {
-                    font-size: 0.875rem;
-                }
+            .description {
+                padding: 40px 0;
+            }
 
-                &:hover {
-                    color: $orange;
+            .nav {
+                .nav-link {
+                    background: none;
+                    border: 1px solid $orange;
+                    border-radius: 0;
+                    color: $light-grey;
+                    margin: 0 6px;
+                    height: 56px;
+                    width: 131px;
+                    font-size: 1.25rem;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 0.875rem;
+                    }
+
+                    &:hover {
+                        color: $orange;
+                    }
                 }
             }
         }
@@ -1283,6 +1287,165 @@ header {
 
         .part_3 {
             padding: 93px 0 43px;
+        }
+    }
+}
+
+.governmentRebates_page {
+    background: imgUrl('globe-left.png', 'lib') left center rgba(19, 152, 76, 0.05);
+    padding: 60px 0;
+
+    .solar-rebate-calculator {
+        padding: 16px 0;
+
+        #rebateCalc_alert {
+            display: none;
+        }
+
+        .input_wrapper {
+            label {
+                letter-spacing: -0.75px;
+                font-size: 1.25rem;
+                color: $dark-grey;
+                margin-bottom: 16px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+            }
+
+            .form-control {
+                border: 0;
+                height: 70px;
+                color: rgba(66, 66, 66, 0.5);
+            }
+        }
+
+        .range {
+            height: 80px;
+            width: 100%;
+            position: relative;
+
+            .field {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                input {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    height: 8px;
+                    width: 100%;
+                    background: $white;
+
+                    &::-webkit-slider-thumb {
+                        height: 30px;
+                        width: 30px;
+                        background-color: $secondary;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        -webkit-appearance: none;
+                    }
+                }
+            }
+
+            .sliderValue {
+                position: absolute;
+                border-radius: 5px;
+                height: 22px;
+                width: 22px;
+                background: $secondary;
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateX(4px);
+                position: absolute;
+                top: -13px;
+                z-index: 2;
+                font-size: 12px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 29%;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: $secondary transparent transparent transparent;
+                }
+            }
+        }
+
+        .submit_button {
+            background: $secondary;
+            width: 100%;
+            height: 70px;
+            color: $white;
+            border: 0;
+            font-size: 1.25rem;
+            letter-spacing: 00.75px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    section.section_1 {
+        padding: 108px 0 32px;
+
+        .heading {
+            padding-bottom: 31px;
+
+            span {
+                color: $secondary;
+            }
+        }
+
+        .description {
+            font-size: 1.25rem;
+            letter-spacing: -0.74px;
+            line-height: 1.75;
+            color: $light-grey;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: $orange  !important;
+                font-size: 1.5625rem;
+                letter-spacing: -0.74px;
+                font-weight: 700;
+                padding: 16px 0;
+            }
+
+            ul {
+                list-style: none;
+                padding-inline-start: 1.5rem;
+
+                li {
+                    padding: 8px 0;
+                    font-size: 1.3125rem;
+                    font-weight: 500;
+                    line-height: 2;
+                    letter-spacing: -0.74px;
+                    color: $dark;
+
+                    &::before {
+                        content: "\2022";
+                        color: $orange;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 2rem;
+                        margin-left: -1.5rem;
+                    }
+                }
+            }
         }
     }
 }
