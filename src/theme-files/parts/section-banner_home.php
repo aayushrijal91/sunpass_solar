@@ -5,10 +5,10 @@ $banner_buttons = get_field("banner_buttons");
 <header class="home_header">
     <?php get_template_part('parts/section', 'nav'); ?>
     <div class="banner">
-        <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
+        <!-- <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport"> -->
         <div class="container">
-            <div class="row">
-                <div class="col-3 text-center">
+            <div class="row gy-4 gy-md-0">
+                <div class="col-md-3 text-center">
                     <img src="<?= $banner['logo']['url'] ?>" alt="<?= $banner['logo']['alt'] ?>">
                 </div>
                 <div class="col">

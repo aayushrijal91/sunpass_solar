@@ -63,9 +63,13 @@ header {
         background: imgUrl("banner-oval.png") top left;
 
         .banner {
-            padding: 108px 0 330px;
             background: imgUrl("banner-home.png") right bottom;
             position: relative;
+            padding: 64px 0 330px;
+
+            @include media-breakpoint-up(md) {
+                padding: 108px 0 330px;
+            }
 
             .sunpass_passport {
                 position: absolute;
@@ -85,7 +89,11 @@ header {
 .homepage {
     section.section_1 {
         background: imgUrl("homepage_section_1.png") right center $secondary;
-        padding: 99px 0 27px;
+        padding: 64px 0 27px;
+
+        @include media-breakpoint-up(md) {
+            padding: 99px 0 27px;
+        }
 
         .serial_no {
             height: 54px;
@@ -113,19 +121,35 @@ header {
         .section_2_1 {
             background: imgUrl('white-curve-1.png') center bottom rgba(2, 121, 182, 0.05);
             background-size: contain;
-            padding: 187px 0 191px;
+            padding: 64px 0;
+
+            @include media-breakpoint-up(md) {
+                padding: 187px 0 191px;
+            }
         }
 
         .section_2_2 {
-            padding: 205px 0 29px;
+            padding: 80px 0 29px;
+
+            @include media-breakpoint-up(md) {
+                padding: 205px 0 29px;
+            }
         }
 
         .section_2_3 {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: top right;
-            padding: 250px 0;
-            margin-bottom: 100px;
+            padding: 64px 0;
+            
+            @include media-breakpoint-up(md) {
+                margin-bottom: 100px;
+                padding: 250px 0;
+            }
+
+            @include media-breakpoint-down(sm) {
+                background-image: none !important;
+            }
 
             .description {
                 padding-top: 30px;
@@ -137,14 +161,26 @@ header {
         }
 
         .section_2_4 {
-            padding: 280px 0 268px;
             background: imgUrl('white-curve-2.png') center top rgba(19, 152, 76, 0.05);
             background-size: contain;
+            padding: 64px 0;
+
+            @include media-breakpoint-up(md) {
+                padding: 280px 0 268px;
+            }
         }
 
         .section_2_5 {
             background: rgba(19, 152, 76, 0.05);
-            padding: 0 0 223px;
+            padding: 0 0 64px;
+            
+            @include media-breakpoint-up(md) {
+                padding: 0 0 223px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 24px;
+            }
 
             .description {
                 padding-top: 40px;
@@ -171,18 +207,29 @@ header {
     }
 
     section.section_3 {
-        padding-top: 178px;
         background: imgUrl("homepage_section_3.png") left center;
+        padding-top: 64px;
+
+        @include media-breakpoint-up(md) {
+            padding-top: 178px;
+        }
     }
 
     section.parts {
         background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
         background-size: contain;
         padding-bottom: 265px;
-
+        
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 80px;
+        }
 
         .part_1 {
-            padding: 124px 0;
+            padding: 64px 0;
+
+            @include media-breakpoint-up(md) {
+                padding: 124px 0;
+            }
         }
 
         .part_2 {
@@ -196,12 +243,20 @@ header {
         }
 
         .part_3 {
-            padding: 93px 0 43px;
+            padding: 48px 0;
+
+            @include media-breakpoint-up(md) {
+                padding: 93px 0 43px;
+            }
         }
     }
 
     section.section_4 {
-        padding: 156px 0 175px;
+        padding: 80px 0;
+        
+        @include media-breakpoint-up(md) {
+            padding: 156px 0 175px;
+        }
 
         .description {
             font-size: 1.25rem;
@@ -684,7 +739,7 @@ header {
 
     section.section_2 {
         background: imgUrl('faded-solar.png') right center #087b40;
-        background-size: contain;
+        background-size: cover;
         padding: 100px 0 155px;
         color: $white;
 
@@ -693,6 +748,13 @@ header {
                 text-decoration: none;
                 color: $white;
                 letter-spacing: -0.01em;
+
+                .image {
+                    height: 462px;
+                    width: 100%;
+                    background: #c4c4c4;
+                    margin-bottom: 40px;
+                }
 
                 .title {
                     font-weight: 700;
@@ -1543,6 +1605,10 @@ footer {
         height: 2px;
         background: #EAE9F2;
         width: 100%;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
     }
 
     .brands_slider {
@@ -1564,6 +1630,10 @@ footer {
 .brighte_promo {
     background: $orange-light;
     font-size: 1.875rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.125rem;
+    }
 }
 
 .sustainability {
@@ -1585,6 +1655,10 @@ footer {
         .accordion-card {
             margin: 50px 0;
 
+            @include media-breakpoint-down(sm) {
+                margin: 20px 0;
+            }
+
             .accordion-head {
                 background-color: $white;
                 color: $black;
@@ -1605,7 +1679,8 @@ footer {
                     max-width: 91%;
 
                     @include media-breakpoint-down(sm) {
-                        max-width: 95%;
+                        // max-width: 95%;
+                        padding: 21px 16px;
                     }
                 }
 
@@ -1615,6 +1690,7 @@ footer {
                     justify-content: center;
                     align-items: center;
                     background: linear-gradient(106deg, $white 18%, rgba(255, 108, 0, 0.08) 0 100%);
+                    background-size: contain;
                 }
 
                 &.active {

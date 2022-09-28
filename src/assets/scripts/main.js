@@ -19,6 +19,15 @@ jQuery(function ($) {
                     $('.brands_slider').slick({
                         slidesToShow: 8,
                         arrow: false,
+                        responsive: [
+                            {
+                                breakpoint: 540,
+                                settings: {
+                                    slidesToShow: 2,
+                                    autoplay: true,
+                                }
+                            }
+                        ]
                     });
 
                     $(".accordion-head").on('click', function () {
