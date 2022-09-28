@@ -30,7 +30,7 @@
                                 <div class="accordion-body" style="<?= ($index == 1) ? 'display: block;' : ''; ?>">
                                     <?= $answer ?>
 
-                                    <div class="row pt-4 pt-md-5">
+                                    <div class="row pt-4 pt-lg-5">
                                         <div class="col-auto">
                                             <a href="<?= isset($button_1['url']) ? $button_1['url'] : '#' ?>" class="btn btn-orange text-white px-4"><?= isset($button_1['title']) ? $button_1['title'] : 'Learn More' ?></a>
                                         </div>

@@ -8,7 +8,7 @@ $banner_buttons = get_field("banner_buttons");
         <!-- <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport"> -->
         <div class="container">
             <div class="row gy-4 gy-md-0">
-                <div class="col-md-3 text-center">
+                <div class="col-md-2 col-lg-3 text-center">
                     <img src="<?= $banner['logo']['url'] ?>" alt="<?= $banner['logo']['alt'] ?>">
                 </div>
                 <div class="col">

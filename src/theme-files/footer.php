@@ -1,8 +1,8 @@
 <footer>
     <div class="container">
-        <div class="row justify-content-center gy-4 gy-md-0 justify-content-md-between align-items-center py-4 pb-md-5">
-            <div class="col-8 col-md-auto col-lg-3"><img src="<?= get_field('logo', 'options')['url'] ?>" alt="<?= get_field('logo', 'options')['alt'] ?>" class="footer-logo"></div>
-            <div class="col-md-auto">
+        <div class="row justify-content-center gy-4 gy-md-0 justify-content-md-between align-items-center py-4 pb-lg-5">
+            <div class="col-8 col-md-3 col-lg-3"><img src="<?= get_field('logo', 'options')['url'] ?>" alt="<?= get_field('logo', 'options')['alt'] ?>" class="footer-logo"></div>
+            <div class="col-md col-lg-auto">
                 <div class="text-white text-center fs-18 fw-500 text-capitalize">
                     <?= get_field('footer_tagline', 'options') ?></div>
             </div>
@@ -27,7 +27,7 @@
     </div>
     <div class="navigation_wrapper">
         <div class="container">
-            <div class="row justify-content-between gy-4 gy-md-0">
+            <div class="row justify-content-between gy-4 gy-lg-0">
                 <div class="col-6 col-md-auto">
                     <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">SiteMap</div>
                     <?php wp_nav_menu(array(
@@ -69,7 +69,7 @@
                         'container_id' => '',
                     )); ?>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-8 col-lg-4">
                     <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">Solar Services</div>
                     <?php wp_nav_menu(array(
                         'menu' => 'Footer Services',
