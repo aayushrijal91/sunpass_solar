@@ -82,6 +82,10 @@ header {
         .banner {
             background: imgUrl("subpage_banner.png") left bottom;
             padding: 110px 0;
+
+            @include media-breakpoint-down(lg) {
+                padding: 80px 0;
+            }
         }
     }
 }
@@ -649,6 +653,18 @@ header {
             padding-top: 208px;
             background: imgUrl('white-curve-2.png') center top #F2F8FB;
             background-size: contain;
+
+            @include media-breakpoint-down(xl) {
+                padding-top: 150px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding-top: 120px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-top: 80px;
+            }
         }
 
         .section_2 {
@@ -658,8 +674,14 @@ header {
             line-height: 1.78;
             font-weight: 500;
 
+            @include media-breakpoint-down(lg) {
+                font-size: 1.25rem;
+                padding: 64px 0;
+            }
+
             @include media-breakpoint-down(sm) {
                 font-size: 0.875rem;
+                padding: 48px 0;
             }
         }
 
@@ -668,16 +690,29 @@ header {
             background-position: left center;
             background-size: contain;
 
+            @include media-breakpoint-down(xxl) {
+                background-position-x: -5rem;
+            }
+
+            @include media-breakpoint-down(xl) {
+                background-position-x: -29rem;
+            }
+
+            @include media-breakpoint-down(lg) {
+                background-image: none !important;
+            }
+
             .description {
                 font-weight: 500;
                 letter-spacing: -0.74px;
                 line-height: 1.69;
                 font-size: 1.525rem;
                 color: $light-grey;
-                padding: 33px 0;
+                padding: 33px 16px;
 
                 @include media-breakpoint-down(sm) {
                     font-size: 0.875rem;
+                    padding: 0 16px;
                 }
 
                 strong {
@@ -689,6 +724,10 @@ header {
 
         .section_4 {
             padding: 163px 0;
+
+            @include media-breakpoint-down(lg) {
+                padding: 80px 0;
+            }
         }
     }
 
@@ -696,11 +735,31 @@ header {
     .faq_wrapper {
         background: $secondary;
         padding: 150px 0;
+
+        @include media-breakpoint-down(xl) {
+            padding: 80px 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 64px 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 48px 0;
+        }
     }
 
     .brands_wrapper {
         background: $white;
         padding: 162px 0;
+
+        @include media-breakpoint-down(xl) {
+            padding: 80px 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 64px 0;
+        }
     }
 }
 
@@ -1682,6 +1741,10 @@ footer {
 
         .accordion-card {
             margin: 50px 0;
+
+            @include media-breakpoint-down(xl) {
+                margin: 35px 0;
+            }
 
             @include media-breakpoint-down(lg) {
                 margin: 25px 0;

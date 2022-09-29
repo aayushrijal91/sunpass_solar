@@ -12,8 +12,8 @@ if ((get_field('banner_title') !== null) && (empty(get_field('banner_title')) ==
     <?php get_template_part('parts/section', 'nav'); ?>
     <div class="banner">
         <div class="container">
-            <div class="row gx-xl-7 align-items-center">
-                <div class="col-auto">
+            <div class="row gy-4 gy-lg-0 gx-xl-7 align-items-center">
+                <div class="col-12 col-lg-auto">
                     <h1 class="heading fs-9 fw-700">
                         <?= $banner_title; ?>
                     </h1>

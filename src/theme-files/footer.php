@@ -1,8 +1,8 @@
 <footer>
     <div class="container">
         <div class="row justify-content-center gy-4 gy-md-0 justify-content-md-between align-items-center py-4 pb-lg-5">
-            <div class="col-8 col-md-3 col-lg-3"><img src="<?= get_field('logo', 'options')['url'] ?>" alt="<?= get_field('logo', 'options')['alt'] ?>" class="footer-logo"></div>
-            <div class="col-md col-lg-auto">
+            <div class="col-8 col-md-3"><img src="<?= get_field('logo', 'options')['url'] ?>" alt="<?= get_field('logo', 'options')['alt'] ?>" class="footer-logo"></div>
+            <div class="col-md col-lg-4 col-xl-auto">
                 <div class="text-white text-center fs-18 fw-500 text-capitalize">
                     <?= get_field('footer_tagline', 'options') ?></div>
             </div>
@@ -84,7 +84,7 @@
     <hr>
     <div class="footer_bottom_wrapper">
         <div class="container">
-            <div class="row justify-content-center gy-4 gy-md-0 justify-content-md-between align-items-center">
+            <div class="row justify-content-center gy-4 gy-xl-0 justify-content-md-between align-items-center">
                 <div class="col-xl-5">
                     <?php wp_nav_menu(array(
                         'menu' => 'Footer Bottom Menu',

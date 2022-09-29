@@ -55,7 +55,7 @@ get_template_part('parts/section', 'brighte');
                 <div class="row justify-content-center">
                     <div class="col-xl-11">
                         <div class="row gy-5 gy-lg-0 justify-content-end">
-                            <div class="col-lg col-xl-5 pe-xl-5">
+                            <div class="col-lg col-xxl-5 pe-xl-5">
                                 <div class="fs-2 fw-900 line-height-1 letter-spacing-n212 pb-md-3"><?= $section_2_1['title'] ?></div>
                                 <div class="line-height-2 text-light-grey fs-20 py-4"><?= $section_2_1['description'] ?></div>
                                 <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots">
@@ -73,7 +73,7 @@ get_template_part('parts/section', 'brighte');
                     <div class="col-md-5 col-lg-6 text-center">
                         <img src="<?= $section_2_2['image']['url'] ?>" alt="<?= $section_2_2['image']['alt'] ?>">
                     </div>
-                    <div class="col-md px-xl-5">
+                    <div class="col-md px-xxl-5">
                         <div class="fs-2 fw-900 line-height-1 letter-spacing-n212 pb-md-3 text-orange"><?= $section_2_2['title'] ?></div>
                         <div class="line-height-2 text-light-grey fs-20 py-4"><?= $section_2_2['description'] ?></div>
                         <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots">
@@ -88,7 +88,7 @@ get_template_part('parts/section', 'brighte');
                     <div class="col-12 d-lg-none">
                         <img src="<?= $section_2_3['background']['url'] ?>" alt="<?= $section_2_3['background']['alt'] ?>">
                     </div>
-                    <div class="col-lg-6 col-xl-8">
+                    <div class="col-lg-6 col-xl-7 col-xxl-8">
                         <div class="fs-3 fw-900 text-orange line-height-1 letter-spacing-n23"><?= $section_2_3['title'] ?></div>
                         <div class="fs-19 pe-xl-5 description"><?= $section_2_3['description'] ?></div>
                         <div class="row">
