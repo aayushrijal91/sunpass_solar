@@ -21,7 +21,7 @@ get_template_part('parts/section', 'brighte');
                     <div class="alert alert-danger text-center mb-5" role="alert" id="rebateCalc_alert">
                         One or more fields are empty. Please check and try again!
                     </div>
-                    <div class="row justify-content-center align-items-end gx-3">
+                    <div class="row justify-content-center align-items-end gy-4 gy-md-0 gx-3">
                         <div class="col-md-4">
                             <div class="input_wrapper">
                                 <label>Your Location</label>
@@ -72,7 +72,7 @@ get_template_part('parts/section', 'brighte');
                         <div class="col-auto">kWhs Per Day</div>
                     </div>
                     <div class="row justify-content-center gy-4">
-                        <div class="col-lg-5">
+                        <div class="col-lg-8 col-xl-6">
                             <div class="input_wrapper text-center">
                                 <label>and I want a solution that is sized for</label>
                                 <select id="rebateCalc_solution" class="form-control form-select">
@@ -95,7 +95,7 @@ get_template_part('parts/section', 'brighte');
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-xl-11">
-                    <div class="row gx-xl-5">
+                    <div class="row gy-5 gy-lg-0 gx-xl-5">
                         <div class="col-lg-6">
                             <div class="row justify-content-end">
                                 <div class="col-xl-10">
