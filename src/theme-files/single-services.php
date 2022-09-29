@@ -14,7 +14,7 @@ get_template_part('parts/section', 'brighte');
                     <div class="heading text-secondary fw-700 fs-8 letter-spacing-n23 text-capitalize"><?= $section_1['title'] ?></div>
                     <div class="text-light-grey line-height-2 fs-22 letter-spacing-n066 pt-3"><?= $section_1['description'] ?></div>
 
-                    <div class="row justify-content-center gx-lg-4 gx-xl-7 pt-5 pt-xl-6">
+                    <div class="row justify-content-center gy-4 gy-lg-0 gx-lg-4 gx-xl-7 pt-5 pt-xl-6">
                         <?php
                         if (have_rows('section_1')) :
                             while (have_rows('section_1')) : the_row();
@@ -61,7 +61,7 @@ get_template_part('parts/section', 'brighte');
                                     <div class="col-xl-8 text-center"><?= $template_1['subtitle'] ?></div>
                                 </div>
 
-                                <div class="row align-items-center g-lg-4 g-xl-5 py-5 py-xl-7">
+                                <div class="row align-items-center gy-4 g-lg-4 g-xl-5 py-5 py-xl-7">
                                     <div class="col-lg-4">
                                         <div class="heroTitle fw-900 fs-14 text-capitalize"><?= $template_1['hero_text'] ?></div>
                                     </div>
@@ -97,7 +97,7 @@ get_template_part('parts/section', 'brighte');
                                 <div class="row justify-content-center">
                                     <div class="col-xl-8 text-center"><?= $template_2['subtitle'] ?></div>
                                     <div class="col-lg-11">
-                                        <div class="row g-lg-4 g-xl-5 pt-5 pt-xl-7">
+                                        <div class="row g-4 g-xl-5 pt-5 pt-xl-7">
                                             <?php
                                             if (have_rows('section_2')) :
                                                 while (have_rows('section_2')) : the_row();
@@ -144,7 +144,7 @@ get_template_part('parts/section', 'brighte');
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-xl-11">
-                    <div class="row gx-xl-5">
+                    <div class="row gy-5 gy-lg-0 gx-xl-5">
                         <div class="col-lg-6">
                             <div class="row justify-content-end">
                                 <div class="col-xl-11">
@@ -167,11 +167,11 @@ get_template_part('parts/section', 'brighte');
         <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-11">
-                    <div class="row gx-xl-5">
+                <div class="col-xxl-11">
+                    <div class="row gy-4 gy-lg-0 gx-xl-5">
                         <div class="col-lg-5">
                             <div class="fw-700 fs-7 line-height-4 pb-3 text-capitalize"><?= $section_4['title'] ?></div>
-                            <div class="row pt-4">
+                            <div class="row pt-3 pt-lg-4">
                                 <?php if (isset($section_4['button_1']['url'])) : ?>
                                     <div class="col-auto">
                                         <a href="<?= $section_4['button_1']['url'] ?>" class="btn bordered border-white text-white px-4"><?= $section_4['button_1']['title'] ?></a>
@@ -184,7 +184,7 @@ get_template_part('parts/section', 'brighte');
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-lg pe-xl-5">
+                        <div class="col-lg col-xl-5 col-xxl pe-xl-5">
                             <div class="description line-height-2 letter-spacing-n066"><?= $section_4['description'] ?></div>
                         </div>
                     </div>

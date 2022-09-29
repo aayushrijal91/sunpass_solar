@@ -22,13 +22,13 @@ get_template_part('parts/section', 'banner');
         <?php $section_2 = get_field('section_2'); ?>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-xl-6">
                     <div class="fw-700 fs-13 line-height-4 text-capitalize"><?= $section_2['title'] ?></div>
                     <div class="line-height-11 pt-3"><?= $section_2['subtitle'] ?></div>
                 </div>
             </div>
             <div class="services_list">
-                <div class="row gy-4 py-5">
+                <div class="row gy-5 py-5">
                     <?php
                     $args = array(
                         'posts_per_page' => -1,
@@ -49,7 +49,7 @@ get_template_part('parts/section', 'banner');
                             // $terms = get_the_terms($post->ID, 'categories');
                             // $category = strtolower($terms[0]->name);
                     ?>
-                            <div class="col-md-6 col-xl-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
                                 <a href="<?= $link ?>" class="service_card">
                                     <div class="image"></div>
                                     <div class="title fs-18"><?= $title ?></div>

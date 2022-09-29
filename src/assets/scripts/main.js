@@ -18,7 +18,7 @@ jQuery(function ($) {
 
                     $('.brands_slider').slick({
                         slidesToShow: 8,
-                        arrow: false,
+                        arrows: false,
                         responsive: [
                             {
                                 breakpoint: 1100,

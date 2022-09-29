@@ -13,7 +13,7 @@ get_template_part('parts/section', 'brighte');
     <section class="section_1">
         <div class="section_1_1">
             <div class="container">
-                <div class="row">
+                <div class="row gy-4 gy-lg-0">
                     <div class="col-lg-6">
                         <div class="heading text-dark text-capitalize fs-6 fw-700">Licensed and Experienced Solar Technicians</div>
                         <div class="fs-19 fw-700 subheading text-orange pt-3">From small residential solar installation to large-scale commercial solar projects.</div>
@@ -38,7 +38,7 @@ get_template_part('parts/section', 'brighte');
 
     <section class="section_2">
         <div class="container">
-            <div class="row gx-xl-5">
+            <div class="row gy-5 gy-lg-0 gx-xl-5">
                 <div class="col-lg-6">
                     <div class="heading text-capitalize fw-900 fs-2 text-dark letter-spacing-n212">Backed By a 25-year performace warranty</div>
                     <div class="description">
