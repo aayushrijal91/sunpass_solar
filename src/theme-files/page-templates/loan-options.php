@@ -13,7 +13,6 @@ get_template_part('parts/section', 'brighte');
     <section class="section_1">
         <?php $section_1 = get_field('section_1'); ?>
         <div class="container">
-
             <?php
             if (have_rows('section_1')) :
                 while (have_rows('section_1')) : the_row();
@@ -25,14 +24,14 @@ get_template_part('parts/section', 'brighte');
                             $about_loan = get_sub_field('about_loan');
                             $rate_warning_link = get_sub_field('rate_warning_link');
             ?>
-                            <div class="row justify-content-between align-items-center py-3">
-                                <div class="col-lg-8">
-                                    <div class="row justify-content-between">
-                                        <div class="col-lg-4">
+                            <div class="row justify-content-between align-items-center py-3 gy-4 gy-lg-0">
+                                <div class="col-lg col-xl-8">
+                                    <div class="row justify-content-between gy-4 gy-md-5 gy-lg-0">
+                                        <div class="col-md-4">
                                             <div class="text-uppercase fs-20">Green Loan</div>
                                             <div class="fs-1 line-height-1 fw-700"><?= $greenloan['min'] ?><span class="fs-10"> to </span><?= $greenloan['max'] ?></div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-md-4">
                                             <div class="text-capitalize fs-20">Variable Rate from</div>
                                             <div class="d-flex align-items-center">
                                                 <div class="fs-1 line-height-1 fw-700"><?= $variable_rate_from ?></div>
@@ -42,7 +41,7 @@ get_template_part('parts/section', 'brighte');
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-md-4">
                                             <div class="text-capitalize fs-20">Comparison Rate^</div>
                                             <div class="d-flex align-items-center">
                                                 <div class="fs-1 line-height-1 fw-700"><?= $comparision_rate ?></div>
@@ -74,7 +73,7 @@ get_template_part('parts/section', 'brighte');
     <section class="section_2">
         <div class="container">
             <div class="heading text-center fs-5 fw-900 line-height-1">Loan Features</div>
-            <div class="row gy-5">
+            <div class="row gy-4 gy-md-5">
                 <?php
                 if (have_rows('section_2')) :
                     while (have_rows('section_2')) : the_row();
@@ -83,7 +82,7 @@ get_template_part('parts/section', 'brighte');
                                 $title = get_sub_field('title');
                                 $description = get_sub_field('description');
                 ?>
-                                <div class="col-lg-4">
+                                <div class="col-md-6 col-xl-4">
                                     <div class="list text-capitalize line-height-2">
                                         <div class="fs-17 fw-700"><?= $title ?></div>
                                         <div class="fs-20 line-height-6"><?= $description ?></div>
@@ -106,13 +105,13 @@ get_template_part('parts/section', 'brighte');
                     <div class="pb-5 pb-xl-7 fs-5 text-capitalize fw-900 line-height-1 letter-spacing-n143 text-center">
                         <?= $section_3['hero_title'] ?>
                     </div>
-                    <div class="row align-items-center">
-                        <div class="col-lg">
-                            <div class="row">
+                    <div class="row align-items-center gy-5 gy-xl-0">
+                        <div class="col-xl">
+                            <div class="row gy-4 gy-md-0">
                                 <div class="col-auto">
                                     <img src="<?= get_template_directory_uri() ?>/images/icons/application-form.png" alt="">
                                 </div>
-                                <div class="col text-capitalize">
+                                <div class="col-12 col-md text-capitalize">
                                     <div class="text-secondary fw-700 fs-17"><?= $section_3['application']['title'] ?></div>
                                     <div class="fs-20 pt-2 pb-3"><?= $section_3['application']['description'] ?></div>
                                     <div class="d-inline-flex">
@@ -121,15 +120,15 @@ get_template_part('parts/section', 'brighte');
                                 </div>
                             </div>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
+                        <div class="col-auto d-none d-xl-block">
                             <div class="vertical_divider"></div>
                         </div>
-                        <div class="col-lg">
-                            <div class="row gx-xl-5">
+                        <div class="col-xl">
+                            <div class="row gy-4 gy-md-0 gx-xl-5">
                                 <div class="col-auto">
                                     <img src="<?= get_template_directory_uri() ?>/images/icons/appointment-form.png" alt="">
                                 </div>
-                                <div class="col text-capitalize">
+                                <div class="col-12 col-md text-capitalize">
                                     <div class="text-secondary fw-700 fs-17"><?= $section_3['appointment']['title'] ?></div>
                                     <div class="fs-21 pt-2 pb-3"><?= $section_3['appointment']['description'] ?></div>
                                     <div class="d-inline-flex">
