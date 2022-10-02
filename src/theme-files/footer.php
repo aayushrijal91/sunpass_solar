@@ -50,9 +50,7 @@
                 <div class="col-6 col-md-auto">
                     <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">Residential</div>
                     <?php wp_nav_menu(array(
-                        'menu' => 'Primary Menu',
-                        'menu_class' => 'navbar-nav',
-                        'item_class' => 'nav-item',
+                        'menu' => 'Footer Residential Menu',
                         'link_class' => 'nav-link',
                         'container_class' => 'footer_menu',
                         'container_id' => '',
@@ -61,9 +59,7 @@
                 <div class="col-6 col-md-auto">
                     <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">Commercial</div>
                     <?php wp_nav_menu(array(
-                        'menu' => 'Primary Menu',
-                        'menu_class' => 'navbar-nav',
-                        'item_class' => 'nav-item',
+                        'menu' => 'Footer Commercial Menu',
                         'link_class' => 'nav-link',
                         'container_class' => 'footer_menu',
                         'container_id' => '',
