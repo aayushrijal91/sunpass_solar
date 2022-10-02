@@ -298,7 +298,7 @@ header {
             letter-spacing: -0.66px;
 
             @include media-breakpoint-down(sm) {
-                font-size: 0.875rem;
+                font-size: 1rem;
             }
         }
     }
@@ -308,9 +308,13 @@ header {
     section.section_1 {
         background: imgUrl('white-curve-2.png') center top rgba(255, 108, 0, 0.04);
         background-size: contain;
-        padding: 98px 0 0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         position: relative;
+        padding: 98px 0 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 80px 0 0;
+        }
     }
 
     section.section_2 {
@@ -334,7 +338,8 @@ header {
             padding: 39px 0 35px;
 
             @include media-breakpoint-down(sm) {
-                font-size: 0.875rem;
+                font-size: 1rem;
+                padding: 24px 0;
             }
 
             ul {
@@ -363,8 +368,20 @@ header {
         padding: 297px 0 135px;
         background: imgUrl('white-curve-2.png') center top #F2F8FB;
 
+        @include media-breakpoint-down(lg) {
+            padding: 130px 0;
+        }
+        
+        @include media-breakpoint-down(sm) {
+            padding: 80px 0;
+        }
+
         .section_3_1 {
             padding-bottom: 114px;
+
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 80px;
+            }
 
             .heading {
                 line-height: 1.28;
@@ -376,11 +393,19 @@ header {
                 font-size: 1.125rem;
                 line-height: 2;
                 font-size: 500;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
             }
         }
 
         .section_3_2 {
             padding-top: 114px;
+
+            @include media-breakpoint-down(lg) {
+                padding-top: 24px;
+            }
 
             .description {
                 color: $light-grey;
@@ -390,7 +415,7 @@ header {
                 padding: 20px 0 16px;
 
                 @include media-breakpoint-down(sm) {
-                    font-size: 0.875rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -401,6 +426,10 @@ header {
         color: $white;
         padding: 143px 0;
 
+        @include media-breakpoint-down(sm) {
+            padding: 80px 0;
+        }
+
         .description {
             font-size: 1.3125rem;
             padding: 60px 0 44px;
@@ -408,7 +437,7 @@ header {
             line-height: 1.9;
 
             @include media-breakpoint-down(sm) {
-                font-size: 0.875rem;
+                font-size: 1rem;
                 padding: 24px 0;
             }
 
@@ -421,6 +450,10 @@ header {
 
     .brands_wrapper {
         padding: 143px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 80px 0;
+        }
     }
 }
 
@@ -431,10 +464,22 @@ header {
         color: $white;
         padding: 123px 0;
 
+        @include media-breakpoint-down(lg) {
+            padding: 100px 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 80px 0;
+        }
+
         .sunpass_passport {
             position: absolute;
             right: 0;
             top: -8rem;
+
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
         }
 
         .heading {
@@ -449,7 +494,7 @@ header {
             letter-spacing: -0.66px;
 
             @include media-breakpoint-down(sm) {
-                font-weight: 0.875rem;
+                font-size: 1rem;
             }
         }
     }
@@ -460,6 +505,14 @@ header {
 
         .section_2_1 {
             padding: 178px 0;
+
+            @include media-breakpoint-down(xl) {
+                padding: 100px 0;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 80px 0;
+            }
 
             .heading {
                 line-height: 1.125;
@@ -472,8 +525,13 @@ header {
                 font-weight: 500;
                 padding-top: 55px;
 
+                @include media-breakpoint-down(lg) {
+                    padding-top: 40px;
+                }
+
                 @include media-breakpoint-down(sm) {
-                    font-size: 0.875rem;
+                    font-size: 1rem;
+                    padding-top: 24px;
                 }
 
                 ul {
@@ -496,6 +554,14 @@ header {
 
         .faq_wrapper {
             padding-bottom: 236px;
+
+            @include media-breakpoint-down(xl) {
+                padding-bottom: 120px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 80px;
+            }
         }
     }
 
@@ -505,11 +571,27 @@ header {
         .section_3_1 {
             padding: 163px 0 0;
 
+            @include media-breakpoint-down(lg) {
+                padding: 100px 0 0;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 80px 0 0;
+            }
+
             .heading {
                 text-align: center;
                 letter-spacing: -2.4px;
                 line-height: 1.12;
                 padding-bottom: 105px;
+
+                @include media-breakpoint-down(lg) {
+                    padding-bottom: 64px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 48px;
+                }
             }
 
             .description {
@@ -519,12 +601,28 @@ header {
                 font-size: 1.4375rem;
                 line-height: 1.74;
 
+                @include media-breakpoint-down(lg) {
+                    font-size: 1.125rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+
                 ul {
                     list-style: none;
                     padding-inline-start: 2.5rem;
 
                     li {
                         padding: 16px 0;
+
+                        @include media-breakpoint-down(lg) {
+                            padding: 8px 0;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            padding: 6px 0;
+                        }
 
                         &::before {
                             content: "\2022";
@@ -541,6 +639,14 @@ header {
 
         .brands_wrapper {
             padding: 170px 0;
+
+            @include media-breakpoint-down(lg) {
+                padding: 120px 0;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 80px 0;
+            }
         }
     }
 }
@@ -552,10 +658,18 @@ header {
         color: $white;
         padding: 123px 0;
 
+        @include media-breakpoint-down(lg) {
+            padding: 80px 0;
+        }
+
         .sunpass_passport {
             position: absolute;
             right: 0;
             top: -8rem;
+
+            @include media-breakpoint-down(xxl) {
+                display: none;
+            }
         }
 
         .heading {
@@ -569,7 +683,7 @@ header {
             letter-spacing: -0.66px;
 
             @include media-breakpoint-down(sm) {
-                font-weight: 0.875rem;
+                font-weight: 1rem;
             }
         }
     }
@@ -611,7 +725,7 @@ header {
                     line-height: 1.46875;
 
                     @include media-breakpoint-down(sm) {
-                        font-size: 0.875rem;
+                        font-weight: 1rem;
                     }
                 }
             }
@@ -724,7 +838,7 @@ header {
                 padding: 33px 16px;
 
                 @include media-breakpoint-down(sm) {
-                    font-size: 0.875rem;
+                    font-size: 1rem;
                     padding: 0 16px;
                 }
 
@@ -1071,7 +1185,7 @@ header {
             font-size: 1.125rem;
 
             @include media-breakpoint-down(sm) {
-                font-size: 0.875rem;
+                font-size: 1rem;
             }
         }
     }
@@ -1358,7 +1472,7 @@ header {
             }
 
             .description {
-                font-size: 0.875rem;
+                font-size: 1rem;
             }
         }
     }
@@ -1380,6 +1494,10 @@ header {
             letter-spacing: -0.74px;
             line-height: 1.75;
             color: $light-grey;
+
+            @include media-breakpoint-down(sm) {
+                font-weight: 1rem;
+            }
         }
     }
 }
@@ -1626,6 +1744,10 @@ header {
             line-height: 1.75;
             color: $light-grey;
 
+            @include media-breakpoint-down(sm) {
+                font-weight: 1rem;
+            }
+
             h1,
             h2,
             h3,
@@ -1794,10 +1916,6 @@ footer {
         color: $light-grey;
         font-size: 1.125rem;
         line-height: 2;
-
-        @include media-breakpoint-down(sm) {
-            font-size: 0.875rem;
-        }
     }
 }
 

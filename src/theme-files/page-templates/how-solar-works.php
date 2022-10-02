@@ -14,10 +14,10 @@ get_template_part('parts/section', 'brighte');
         <?php $section_1 = get_field('section_1'); ?>
         <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row gy-4 gy-lg-0">
+                <div class="col-lg-5 col-xl-4">
                     <div class="heading fs-4 letter-spacing-n23 fw-700"><?= $section_1['title'] ?></div>
-                    <div class="row pt-5">
+                    <div class="row pt-4 pt-lg-5">
                         <?php if (isset($section_1['button_1']['url'])) : ?>
                             <div class="col-auto">
                                 <a href="<?= $section_1['button_1']['url'] ?>" class="btn bordered border-white text-white px-4 px-xl-5"><?= $section_1['button_1']['title'] ?></a>
@@ -30,7 +30,7 @@ get_template_part('parts/section', 'brighte');
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col col-xl-7 description">
+                <div class="col col-xl-6 col-xxl-7 description">
                     <?= $section_1['description'] ?>
                 </div>
             </div>
@@ -42,7 +42,7 @@ get_template_part('parts/section', 'brighte');
             <?php $section_2 = get_field('section_2'); ?>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <div class="heading fs-2 text-dark letter-spacing-n212 fw-700"><?= $section_2['title'] ?></div>
                         <div class="description">
                             <?= $section_2['description'] ?>
@@ -62,8 +62,8 @@ get_template_part('parts/section', 'brighte');
             <?php $section_3 = get_field('section_3'); ?>
             <div class="container">
                 <div class="heading fs-2 text-orange fw-900"><?= $section_3['title'] ?></div>
-                <div class="row gx-xl-8">
-                    <div class="col-auto">
+                <div class="row gx-xl-8 gy-5 gy-md-0">
+                    <div class="col-12 col-md col-lg-5 col-xl-auto">
                         <img src="<?= $section_3['image']['url'] ?>" alt="<?= $section_3['image']['url'] ?>" class="w-100">
                     </div>
                     <div class="col description"><?= $section_3['description'] ?></div>

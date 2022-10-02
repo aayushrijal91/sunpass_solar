@@ -30,7 +30,7 @@ get_template_part('parts/section', 'brighte');
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-auto">
+                <div class="col-12 col-lg-auto">
                     <img src="<?= $section_1['image']['url'] ?>" alt="<?= $section_1['image']['alt'] ?>" class="w-100">
                 </div>
             </div>
@@ -41,7 +41,7 @@ get_template_part('parts/section', 'brighte');
         <?php $section_2 = get_field('section_2'); ?>
         <div class="container">
             <div class="fs-8 heading"><?= $section_2['hero_heading'] ?></div>
-            <div class="row gx-xl-6">
+            <div class="row gx-lg-5 gx-xl-6 gy-5 gy-md-6 gy-lg-0">
                 <div class="col-lg-6">
                     <div class="text-orange fs-7 fw-700 letter-spacing-n23"><?= $section_2['column_1']['title'] ?></div>
                     <div class="description two-columns"><?= $section_2['column_1']['description'] ?></div>
@@ -83,10 +83,10 @@ get_template_part('parts/section', 'brighte');
         <div class="section_3_1">
             <?php $section_3_1 = $section_3['section_3_1']; ?>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-lg-6 col-xl-5">
                         <div class="heading fs-5 letter-spacing-n23 text-orange fw-700 line-height-8"><?= $section_3_1['title'] ?></div>
-                        <div class="row pt-5">
+                        <div class="row pt-4 pt-lg-5">
                             <?php if (isset($section_3_1['button_1']['url'])) : ?>
                                 <div class="col-auto">
                                     <a href="<?= $section_3_1['button_1']['url'] ?>" class="btn bordered border-orange text-orange px-4 px-xl-5"><?= $section_3_1['button_1']['title'] ?></a>
@@ -110,7 +110,7 @@ get_template_part('parts/section', 'brighte');
         <div class="section_3_2">
             <?php $section_3_2 = $section_3['section_3_2']; ?>
             <div class="container">
-                <div class="row align-items-center gx-xl-5">
+                <div class="row align-items-center gx-lg-5 gy-5 gy-lg-0">
                     <div class="col-12 col-lg"><img src="<?= $section_3_2['image']['url'] ?>" alt="<?= $section_3_2['image']['alt'] ?>" class="w-100"></div>
                     <div class="col-lg-6">
                         <div class="heading fs-5 letter-spacing-n23 text-dark fw-700 line-height-4"><?= $section_3_2['title'] ?></div>

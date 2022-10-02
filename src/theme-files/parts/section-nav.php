@@ -37,7 +37,7 @@
 <div class="navigation">
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-xl-11">
+            <div class="col-xxl-11">
                 <nav class="navbar navbar-expand-xl navbar-light">
                     <a class="navbar-brand" href="<?= home_url() ?>"><img src="<?= $logo['url']; ?>" alt="<?= $logo['alt']; ?>" /></a>
                     <button class="navbar-toggler" id="triggerSlideNav">
@@ -53,7 +53,7 @@
                                 <?php wp_nav_menu(array(
                                     'menu' => 'Primary Top Menu',
                                     'menu_class' => 'navbar-nav',
-                                    'item_class' => 'nav-item px-lg-2 px-xl-4',
+                                    'item_class' => 'nav-item px-lg-2 px-xl-3 px-xxl-4',
                                     'link_class' => 'nav-link',
                                     'container_class' => 'primary_top_menu',
                                     'container_id' => '',
@@ -67,7 +67,7 @@
                             <?php wp_nav_menu(array(
                                 'menu' => 'Primary Menu',
                                 'menu_class' => 'navbar-nav',
-                                'item_class' => 'nav-item px-lg-2 px-xl-4',
+                                'item_class' => 'nav-item px-lg-2 px-xl-3 px-xxl-4',
                                 'link_class' => 'nav-link',
                                 'container_class' => 'primary_menu',
                                 'container_id' => '',

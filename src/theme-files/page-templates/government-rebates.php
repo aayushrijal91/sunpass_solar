@@ -98,7 +98,7 @@ get_template_part('parts/section', 'brighte');
                     <div class="row gy-5 gy-lg-0 gx-xl-5">
                         <div class="col-lg-6">
                             <div class="row justify-content-end">
-                                <div class="col-xl-10">
+                                <div class="col-xxl-10">
                                     <div class="heading text-dark text-capitalize fw-900 fs-2 letter-spacing-n212 line-height-1"><?= $section_1['title'] ?></div>
                                     <div class="description"><?= $section_1['description'] ?></div>
                                 </div>
