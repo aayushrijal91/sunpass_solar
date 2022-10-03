@@ -1,11 +1,11 @@
 <div class="sustainability">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
                 <div class="fs-6 fw-700 letter-spacing-n199"><?= get_field('sustainability', 'options')['title'] ?></div>
                 <div class="fs-20 fw-700 text-orange pt-4"><?= get_field('sustainability', 'options')['subtitle'] ?></div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <?php if (have_rows('sustainability', 'options')) :
                     while (have_rows('sustainability', 'options')) : the_row();
                         if (have_rows('description', 'options')) :

@@ -1,5 +1,5 @@
 <?php $brands = get_field('brands', 'options'); ?>
-<div class="brands">
+<div class="brands" data-aos="fade-up">
     <div class="container">
         <div class="row gx-2 align-items-center pb-5">
             <div class="col-auto d-flex align-items-center">

@@ -13,7 +13,7 @@ get_template_part('parts/section', 'brighte');
     <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
     <div class="container">
         <div class="row gy-5">
-            <div class="col-lg-6 col-xl-5">
+            <div class="col-lg-6 col-xl-5" data-aos="fade-right">
                 <div class="row align-items-center">
                     <?php
                     if (have_rows('socials', 'options')) :
@@ -52,7 +52,7 @@ get_template_part('parts/section', 'brighte');
                     <div class="col-12 text-secondary fw-500 fs-22 pt-3"><?= get_field('email', 'options') ?></div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <div class="form_wrapper">
                     <?= do_shortcode('[contact-form-7 id="390" title="Contact Us"]') ?>
                 </div>

@@ -10,7 +10,7 @@ get_template_part('parts/section', 'brighte');
 ?>
 
 <div class="governmentRebates_page">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
             <div class="col-xl-11">
                 <div class="text-center text-secondary fs-13 line-height-1">System Calculator</div>
@@ -96,7 +96,7 @@ get_template_part('parts/section', 'brighte');
             <div class="row justify-content-center">
                 <div class="col-xl-11">
                     <div class="row gy-5 gy-lg-0 gx-xl-5">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-right">
                             <div class="row justify-content-end">
                                 <div class="col-xxl-10">
                                     <div class="heading text-dark text-capitalize fw-900 fs-2 letter-spacing-n212 line-height-1"><?= $section_1['title'] ?></div>
@@ -104,7 +104,7 @@ get_template_part('parts/section', 'brighte');
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-left">
                             <img src="<?= $section_1['image']['url'] ?>" alt="<?= $section_1['image']['alt'] ?>">
                         </div>
                     </div>

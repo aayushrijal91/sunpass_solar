@@ -16,10 +16,10 @@ get_template_part('parts/section', 'brighte');
             <?php $section_2 = get_field('section_2'); ?>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <img src="<?= $section_1['image']['url'] ?>" alt="<?= $section_1['image']['alt'] ?>">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <div class="text-orange fs-22">Inverters</div>
                         <div class="fs-2 line-height-10 text-orange fw-900 letter-spacing-n23"><?= $section_1['title'] ?></div>
                         <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -67,7 +67,7 @@ get_template_part('parts/section', 'brighte');
                     </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <div class="text-orange fs-22">Solars</div>
                         <div class="fs-2 line-height-10 text-orange fw-900 letter-spacing-n23"><?= $section_2['title'] ?></div>
                         <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -113,7 +113,7 @@ get_template_part('parts/section', 'brighte');
                         </div>
                         <div class="pt-5"><img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots"></div>
                     </div>
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 text-center" data-aos="fade-left">
                         <img src="<?= $section_2['image']['url'] ?>" alt="<?= $section_2['image']['alt'] ?>">
                     </div>
                 </div>

@@ -10,12 +10,12 @@ if ((get_field('banner_title') !== null) && (empty(get_field('banner_title')) ==
 ?>
 <header class="subpage_header">
     <?php get_template_part('parts/section', 'nav'); ?>
-    <div class="banner">
+    <div class="banner" data-aos="fade-right">
         <div class="container">
             <div class="row gy-4 gy-lg-0 gx-xl-7 align-items-center">
                 <div class="col-12 col-lg-auto">
                     <h1 class="heading fs-9 fw-700">
-                        <?= $banner_title; ?>
+                        <?= empty($banner_title) ? "Page Not Found" : $banner_title; ?>
                     </h1>
                 </div>
                 <div class="col">

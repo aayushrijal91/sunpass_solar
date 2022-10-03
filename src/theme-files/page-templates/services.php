@@ -10,7 +10,7 @@ get_template_part('parts/section', 'banner');
 
 <div class="services_page">
     <?php $section_1 = get_field('section_1'); ?>
-    <section class="section_1">
+    <section class="section_1" data-aos="fade-up">
         <div class="container">
             <div class="text-capitalize text-secondary fw-900 letter-spacing-n23 fs-2 line-height-1"><?= $section_1['title'] ?></div>
             <div class="text-light-grey letter-spacing-n074 fs-20 fw-500 line-height-2 pt-4"><?= $section_1['subtitle'] ?></div>
@@ -21,7 +21,7 @@ get_template_part('parts/section', 'banner');
     <section class="section_2">
         <?php $section_2 = get_field('section_2'); ?>
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center" data-aos="fade-right">
                 <div class="col-xl-6">
                     <div class="fw-700 fs-13 line-height-4 text-capitalize"><?= $section_2['title'] ?></div>
                     <div class="line-height-11 pt-3"><?= $section_2['subtitle'] ?></div>
@@ -49,7 +49,7 @@ get_template_part('parts/section', 'banner');
                             // $terms = get_the_terms($post->ID, 'categories');
                             // $category = strtolower($terms[0]->name);
                     ?>
-                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up">
                                 <a href="<?= $link ?>" class="service_card">
                                     <div class="image"></div>
                                     <div class="title fs-18"><?= $title ?></div>

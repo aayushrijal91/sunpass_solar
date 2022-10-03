@@ -12,7 +12,7 @@ get_template_part('parts/section', 'brighte');
 <div class="loanoptions_page">
     <section class="section_1">
         <?php $section_1 = get_field('section_1'); ?>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <?php
             if (have_rows('section_1')) :
                 while (have_rows('section_1')) : the_row();
@@ -71,7 +71,7 @@ get_template_part('parts/section', 'brighte');
     </section>
     <img src="<?= get_template_directory_uri() ?>/images/lib/solar-services.jpg" class="w-100" alt="Solar Services">
     <section class="section_2">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="heading text-center fs-5 fw-900 line-height-1">Loan Features</div>
             <div class="row gy-4 gy-md-5">
                 <?php
@@ -106,7 +106,7 @@ get_template_part('parts/section', 'brighte');
                         <?= $section_3['hero_title'] ?>
                     </div>
                     <div class="row align-items-center gy-5 gy-xl-0">
-                        <div class="col-xl">
+                        <div class="col-xl" data-aos="fade-right">
                             <div class="row gy-4 gy-md-0">
                                 <div class="col-auto">
                                     <img src="<?= get_template_directory_uri() ?>/images/icons/application-form.png" alt="">
@@ -123,7 +123,7 @@ get_template_part('parts/section', 'brighte');
                         <div class="col-auto d-none d-xl-block">
                             <div class="vertical_divider"></div>
                         </div>
-                        <div class="col-xl">
+                        <div class="col-xl" data-aos="fade-left">
                             <div class="row gy-4 gy-md-0 gx-xl-5">
                                 <div class="col-auto">
                                     <img src="<?= get_template_directory_uri() ?>/images/icons/appointment-form.png" alt="">

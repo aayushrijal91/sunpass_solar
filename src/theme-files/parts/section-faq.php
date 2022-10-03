@@ -1,4 +1,4 @@
-<div class="faq">
+<div class="faq" data-aos="fade-up">
     <div class="container">
         <div class="accordion-container">
             <?php if (have_rows('faq')) :

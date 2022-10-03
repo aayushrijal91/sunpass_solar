@@ -10,7 +10,7 @@ get_template_part('parts/section', 'brighte');
         <?php $section_1 = get_field('section_1') ?>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-11">
+                <div class="col-xl-11" data-aos="fade-up">
                     <div class="heading text-secondary fw-700 fs-8 letter-spacing-n23 text-capitalize"><?= $section_1['title'] ?></div>
                     <div class="text-light-grey line-height-2 fs-22 letter-spacing-n066 pt-3"><?= $section_1['description'] ?></div>
 
@@ -23,7 +23,7 @@ get_template_part('parts/section', 'brighte');
                                         $title = get_sub_field('title');
                                         $description = get_sub_field('description');
                         ?>
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6" data-aos="fade-up">
                                             <div class="description_column">
                                                 <div class="text-orange fw-700 letter-spacing-n23 fs-10 line-height-4"><?= $title ?></div>
                                                 <div class="text-light-grey fs-22 line-height-2 letter-spacing-n066 pt-4">
@@ -51,7 +51,7 @@ get_template_part('parts/section', 'brighte');
         <section class="section_2">
             <img src="<?= get_template_directory_uri() ?>/images/background/homepage_section_2_globe.png" alt="Globe" class="globe">
             <div class="container-fluid">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" data-aos="fade-up">
                     <div class="col-lg-11">
                         <div class="text-center text-capitalize letter-spacing-n143 fw-900 fs-5 pb-4 line-height-1">What do we offer?</div>
                         <?php if ($section_2['choose_template'] == 'Template 1') :
@@ -145,7 +145,7 @@ get_template_part('parts/section', 'brighte');
             <div class="row justify-content-center">
                 <div class="col-xl-11">
                     <div class="row gy-5 gy-lg-0 gx-xl-5">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-right">
                             <div class="row justify-content-end">
                                 <div class="col-xl-11">
                                     <div class="heading text-capitalize fw-900 fs-2 letter-spacing-n212"><?= $section_3['title'] ?></div>
@@ -153,7 +153,7 @@ get_template_part('parts/section', 'brighte');
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-left">
                             <img src="<?= $section_3['image']['url'] ?>" alt="<?= $section_3['image']['alt'] ?>">
                         </div>
                     </div>
@@ -169,7 +169,7 @@ get_template_part('parts/section', 'brighte');
             <div class="row justify-content-center">
                 <div class="col-xxl-11">
                     <div class="row gy-4 gy-lg-0 gx-xl-5">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5" data-aos="fade-right">
                             <div class="fw-700 fs-7 line-height-4 pb-3 text-capitalize"><?= $section_4['title'] ?></div>
                             <div class="row pt-3 pt-lg-4">
                                 <?php if (isset($section_4['button_1']['url'])) : ?>
@@ -184,7 +184,7 @@ get_template_part('parts/section', 'brighte');
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-lg col-xl-5 col-xxl pe-xl-5">
+                        <div class="col-lg col-xl-5 col-xxl pe-xl-5" data-aos="fade-left">
                             <div class="description line-height-2 letter-spacing-n066"><?= $section_4['description'] ?></div>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ get_template_part('parts/section', 'brighte');
         <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport">
         <div class="container">
             <div class="row gx-xl-5 gy-4 gy-lg-0">
-                <div class="col-lg-6 col-xl-4">
+                <div class="col-lg-6 col-xl-4" data-aos="fade-right">
                     <div class="heading text-capitalize fs-4 letter-spacing-n23 fw-700"><?= $section_1['title'] ?></div>
                     <div class="row pt-4 pt-lg-5">
                         <?php if (isset($section_1['button_1']['url'])) : ?>
@@ -30,7 +30,7 @@ get_template_part('parts/section', 'brighte');
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col col-xl-7 description">
+                <div class="col col-xl-7 description" data-aos="fade-left">
                     <?= $section_1['description'] ?>
                 </div>
             </div>
@@ -39,7 +39,7 @@ get_template_part('parts/section', 'brighte');
 
     <section class="section_2">
         <?php $section_2 = get_field('section_2'); ?>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-xl-11 text-center">
                     <div class="fs-5 text-capitalize text-dark letter-spacing-n23 fw-700 line-height-1"><?= $section_2['title'] ?></div>
