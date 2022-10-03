@@ -72,16 +72,18 @@ $the_query = new WP_Query($args);
                 $count = 0;
             ?>
                 <div class="arealistwrap">
-                    <div class="row">
+                    <div class="row g-4 g-md-5">
                         <?php foreach (range('A', 'Z') as $char) {
                             if (isset($htm3[$char]) && $htm3[$char] != '') {
                         ?>
                                 <div class="col-lg-4 col-md-6 arealist char<?= $char ?> <?php echo ($count > 5) ? 'arealisthide' : ''; ?> ">
+                                <div class="arealist_inner">
                                     <h3 class="alphabet-title font-weight-bold"><?= $char ?></h3>
                                     <ul>
                                         <?php echo $htm3[$char]; ?>
                                     </ul>
                                     <div class="mbottom "></div>
+                                </div>
                                 </div>
                         <?php $count++;
                             }
@@ -89,7 +91,7 @@ $the_query = new WP_Query($args);
                     </div>
                 </div>
                 <div class="noresult">No Result Found.</div>
-                <div class="areas_loadMoreWrap "><a href="javascript:void(0)" class="btn btn-secondary text-white px-4 px-xl-5">Load More</a></div>
+                <div class="areas_loadMoreWrap "><a href="javascript:void(0)" class="areas_loadMoreBtn btn btn-secondary text-white px-4 px-xl-5">Load More</a></div>
             <?php }
             wp_reset_postdata(); ?>
 

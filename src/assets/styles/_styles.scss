@@ -1314,18 +1314,21 @@ header {
 
         .arealistwrap {
             .arealist {
-                background: #fafafa;
-                padding: 51px;
+                .arealist_inner {
+                    background: #fafafa;
+                    padding: 51px;
 
-                .suburb_link {
-                    text-decoration: none;
+                    .suburb_link {
+                        text-decoration: none;
+                    }
+    
+                    .alphabet-title {
+                        font-size: 1.875rem;
+                        color: #1b2039;
+                        margin-bottom: 1rem;
+                    }
                 }
 
-                .alphabet-title {
-                    font-size: 1.875rem;
-                    color: #1b2039;
-                    margin-bottom: 1rem;
-                }
             }
 
 
