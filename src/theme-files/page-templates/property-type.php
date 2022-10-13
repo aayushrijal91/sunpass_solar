@@ -52,7 +52,7 @@ get_template_part('parts/section', 'brighte');
                                                 $price = get_sub_field('price');
                                 ?>
                                                 <div class="tab-pane fade<?= $index == 1 ? ' show active' : '' ?>" id="v-pills-<?= $index ?>" role="tabpanel" aria-labelledby="v-pills-<?= $index ?>-tab">
-                                                    From <?= $price ?>
+                                                    From $<?= $price ?>
                                                 </div>
                                 <?php
                                                 $index++;
@@ -100,7 +100,7 @@ get_template_part('parts/section', 'brighte');
                                                 $price = get_sub_field('price');
                                 ?>
                                                 <div class="tab-pane fade<?= $index == 100 ? ' show active' : '' ?>" id="v-pills-<?= $index ?>" role="tabpanel" aria-labelledby="v-pills-<?= $index ?>-tab">
-                                                    From <?= $price ?>
+                                                    From $<?= $price ?>
                                                 </div>
                                 <?php
                                                 $index++;
