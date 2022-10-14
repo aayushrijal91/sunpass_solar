@@ -49,39 +49,7 @@ get_template_part('parts/section', 'brighte');
         </div>
     </section>
     <section class="section_2">
-        <div class="section_2_1">
-            <?php $section_2_1 = get_field("section_2")['section_2_1']; ?>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-xl-11">
-                        <div class="row gy-5 gy-lg-0 justify-content-end">
-                            <div class="col-lg col-xxl-5 pe-xl-5" data-aos="fade-right">
-                                <div class="fs-2 fw-900 line-height-1 letter-spacing-n212 pb-md-3"><?= $section_2_1['title'] ?></div>
-                                <div class="line-height-2 text-light-grey fs-20 py-4"><?= $section_2_1['description'] ?></div>
-                                <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots">
-                            </div>
-                            <div class="col-lg-6" data-aos="fade-left"><img src="<?= $section_2_1['image']['url'] ?>" alt="<?= $section_2_1['image']['alt'] ?>"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section_2_2">
-            <?php $section_2_2 = get_field("section_2")['section_2_2']; ?>
-            <div class="container">
-                <div class="row gy-5 gy-md-0 gx-lg-5 gx-xl-4 align-items-center">
-                    <div class="col-md-5 col-lg-6 text-center" data-aos="fade-right">
-                        <img src="<?= $section_2_2['image']['url'] ?>" alt="<?= $section_2_2['image']['alt'] ?>">
-                    </div>
-                    <div class="col-md px-xxl-5" data-aos="fade-left">
-                        <div class="fs-2 fw-900 line-height-1 letter-spacing-n212 pb-md-3 text-orange"><?= $section_2_2['title'] ?></div>
-                        <div class="line-height-2 text-light-grey fs-20 py-4"><?= $section_2_2['description'] ?></div>
-                        <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <?php $section_2_3 = get_field("section_2")['section_2_3']; ?>
+    <?php $section_2_3 = get_field("section_2")['section_2_3']; ?>
         <div class="section_2_3 lazyload" data-src="<?= $section_2_3['background']['url'] ?>">
             <div class="container">
                 <div class="row">
@@ -106,6 +74,41 @@ get_template_part('parts/section', 'brighte');
                 </div>
             </div>
         </div>
+        
+        <div class="section_2_2">
+            <?php $section_2_2 = get_field("section_2")['section_2_2']; ?>
+            <div class="container">
+                <div class="row gy-5 gy-md-0 gx-lg-5 gx-xl-4 align-items-center">
+                    <div class="col-md-5 col-lg-6 text-center" data-aos="fade-right">
+                        <img src="<?= $section_2_2['image']['url'] ?>" alt="<?= $section_2_2['image']['alt'] ?>">
+                    </div>
+                    <div class="col-md px-xxl-5" data-aos="fade-left">
+                        <div class="fs-2 fw-900 line-height-1 letter-spacing-n212 pb-md-3 text-orange"><?= $section_2_2['title'] ?></div>
+                        <div class="line-height-2 text-light-grey fs-20 py-4"><?= $section_2_2['description'] ?></div>
+                        <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section_2_1">
+        <?php $section_2_1 = get_field("section_2")['section_2_1']; ?>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-xl-11">
+                        <div class="row gy-5 gy-lg-0 justify-content-end">
+                            <div class="col-lg col-xxl-5 pe-xl-5" data-aos="fade-right">
+                                <div class="fs-2 fw-900 line-height-1 letter-spacing-n212 pb-md-3"><?= $section_2_1['title'] ?></div>
+                                <div class="line-height-2 text-light-grey fs-20 py-4"><?= $section_2_1['description'] ?></div>
+                                <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots">
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left"><img src="<?= $section_2_1['image']['url'] ?>" alt="<?= $section_2_1['image']['alt'] ?>"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="section_2_4">
             <?php $section_2_4 = get_field("section_2")['section_2_4']; ?>
             <div class="container">
@@ -135,11 +138,11 @@ get_template_part('parts/section', 'brighte');
                     <div class="col" data-aos="fade-left">
                         <div class="fs-2 fw-900 text-capitalize line-height-1 letter-spacing-n212"><?= $section_2_5['title'] ?></div>
                         <div class="description fs-21"><?= $section_2_5['description'] ?></div>
-                        <img src="<?= get_template_directory_uri() ?>/images/icons/two-dots.png" alt="two dots">
+                        <a href="<?= $section_2_5['button']['url'] ?>" class="btn d-inline-flex btn-secondary text-white px-4 px-xl-5"><?= $section_2_5['button']['title'] ?></a>
+
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <section class="section_3">
@@ -175,25 +178,6 @@ get_template_part('parts/section', 'brighte');
             </div>
         </div>
         <?php get_template_part('parts/section', 'faq'); ?>
-    </section>
-    <section class="section_4" data-aos="fade-up">
-        <?php $section_4 = get_field('section_4'); ?>
-        <div class="container">
-            <div class="row gy-4 gy-lg-0">
-                <div class="col-lg-6">
-                    <div class="text-orange fs-5 letter-spacing-n23 fw-700"><?= $section_4['title'] ?></div>
-                    <div class="row pt-4 pt-lg-5 pt-xl-6">
-                        <div class="col-auto">
-                            <a href="<?= $section_4['button_1']['url'] ?>" class="btn bordered border-secondary text-secondary px-4 px-xl-5"><?= $section_4['button_1']['title'] ?></a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="<?= $section_4['button_2']['url'] ?>" class="btn btn-secondary text-white px-4 px-xl-5"><?= $section_4['button_2']['title'] ?></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 description"><?= $section_4['description'] ?></div>
-            </div>
-        </div>
     </section>
 </div>
 

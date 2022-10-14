@@ -2,6 +2,7 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+// Start of header
 header {
     .slide-nav {
         position: fixed;
@@ -71,7 +72,7 @@ header {
         }
 
         @include media-breakpoint-up(xl) {
-            .dropdown:hover > .dropdown-menu {
+            .dropdown:hover>.dropdown-menu {
                 display: block;
             }
         }
@@ -120,6 +121,9 @@ header {
     }
 }
 
+// End of header
+
+// Start of homepage
 .homepage {
     section.section_1 {
         background: imgUrl("homepage_section_1.png") right center $secondary;
@@ -157,7 +161,6 @@ header {
         background: imgUrl('homepage_section_2_globe.png') right 43%;
 
         .section_2_1 {
-            background: imgUrl('white-curve-1.png') center bottom rgba(2, 121, 182, 0.05);
             background-size: contain;
             padding: 64px 0;
 
@@ -178,7 +181,7 @@ header {
             padding: 80px 0 29px;
 
             @include media-breakpoint-up(xl) {
-                padding: 205px 0 29px;
+                padding: 80px 0 29px;
             }
         }
 
@@ -189,7 +192,7 @@ header {
             padding: 64px 0;
 
             @include media-breakpoint-up(xl) {
-                margin-bottom: 100px;
+                margin: 100px 0 80px;
                 padding: 250px 0;
             }
 
@@ -254,7 +257,7 @@ header {
 
                 h3 {
                     font-size: 1.6875rem;
-                    color: $black  !important;
+                    color: $black !important;
 
                     @include media-breakpoint-down(sm) {
                         font-size: 1rem;
@@ -312,27 +315,11 @@ header {
             }
         }
     }
-
-    section.section_4 {
-        padding: 80px 0;
-
-        @include media-breakpoint-up(lg) {
-            padding: 156px 0 175px;
-        }
-
-        .description {
-            font-size: 1.25rem;
-            line-height: 2;
-            color: $light-grey;
-            letter-spacing: -0.66px;
-
-            @include media-breakpoint-down(sm) {
-                font-size: 1rem;
-            }
-        }
-    }
 }
 
+// End of homepage
+
+// Start of Benefits of Solar Page
 .benefitsOfSolar_page {
     section.section_1 {
         background: imgUrl('white-curve-2.png') center top rgba(255, 108, 0, 0.04);
@@ -400,7 +387,7 @@ header {
         @include media-breakpoint-down(lg) {
             padding: 130px 0;
         }
-        
+
         @include media-breakpoint-down(sm) {
             padding: 80px 0;
         }
@@ -486,6 +473,9 @@ header {
     }
 }
 
+// End of Benefits of Solar Page
+
+// Start of How Solar Works Page
 .howSolarWorks_page {
     section.section_1 {
         background: $secondary;
@@ -680,6 +670,9 @@ header {
     }
 }
 
+// End of How Solar Works Page
+
+// Start of Future of Solar Page
 .futureOfSolar_page {
     section.section_1 {
         background: $secondary;
@@ -771,6 +764,49 @@ header {
     }
 }
 
+// End of Future of Solar Page
+
+// Start of International Industry Experience Page 
+.industryExperience_page {
+    .top_section_wrapper {
+        background: imgUrl('aboutus_background.png') right 90%;
+        padding-top: 208px;
+    }
+
+    .faq_wrapper {
+        background: $secondary;
+        padding: 150px 0;
+
+        @include media-breakpoint-down(xl) {
+            padding: 80px 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 64px 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 48px 0;
+        }
+    }
+
+    .brands_wrapper {
+        background: $white;
+        padding: 162px 0;
+
+        @include media-breakpoint-down(xl) {
+            padding: 80px 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 64px 0;
+        }
+    }
+}
+
+// End of International Industry Experience Page 
+
+// Start of FAQ Page
 .faq_page {
     .faq_wrapper {
         background: $secondary;
@@ -801,6 +837,9 @@ header {
     }
 }
 
+// End of FAQ Page
+
+// Start of About Us Page
 .aboutus_page {
     .top_section_wrapper {
         background: imgUrl('aboutus_background.png') right 90%;
@@ -919,6 +958,9 @@ header {
     }
 }
 
+// End of About Us Page
+
+// Start of Contact Us Page
 .contactus_page {
     background-color: $white;
     position: relative;
@@ -989,6 +1031,9 @@ header {
     }
 }
 
+// End of Contact Us Page
+
+// Start of Services Page
 .services_page {
     section.section_1 {
         background: rgba(19, 152, 76, 0.05);
@@ -1047,6 +1092,9 @@ header {
     }
 }
 
+// End of Services Page
+
+// Start of Inner Services Page
 .innerService_page {
     section.section_1 {
         background: rgba(19, 152, 76, 0.05);
@@ -1129,7 +1177,7 @@ header {
 
         .brands_wrapper {
             padding-top: 71px;
-            color: $white  !important;
+            color: $white !important;
         }
     }
 
@@ -1158,7 +1206,7 @@ header {
             h4,
             h5,
             h6 {
-                color: $orange  !important;
+                color: $orange !important;
                 font-size: 1.5625rem;
                 letter-spacing: -0.74px;
                 font-weight: 700;
@@ -1220,6 +1268,9 @@ header {
     }
 }
 
+// End of Inner Services Page
+
+// Start of Areas Page
 .areas_page {
     section.areatop {
         padding: 4rem 0;
@@ -1321,7 +1372,7 @@ header {
                     .suburb_link {
                         text-decoration: none;
                     }
-    
+
                     .alphabet-title {
                         font-size: 1.875rem;
                         color: #1b2039;
@@ -1476,6 +1527,9 @@ header {
     }
 }
 
+// End of Areas Page
+
+// Suburb of Suburb Page
 .suburb_page {
     section.section_1 {
         background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
@@ -1534,6 +1588,9 @@ header {
     }
 }
 
+// End of Suburb Page
+
+// Start of Loan Options Page
 .loanoptions_page {
     section.section_1 {
         background: rgba(19, 152, 76, 0.05);
@@ -1589,6 +1646,7 @@ header {
     }
 }
 
+// Start of Property Type Page
 .propertyType_page {
     section.products {
         background: imgUrl('homepage_section_2_globe.png') right center;
@@ -1651,6 +1709,9 @@ header {
     }
 }
 
+// End of Property Type Page
+
+// Start of Government Rebates Page
 .governmentRebates_page {
     background: imgUrl('globe-left.png', 'lib') left center rgba(19, 152, 76, 0.05);
     padding: 60px 0;
@@ -1786,7 +1847,7 @@ header {
             h4,
             h5,
             h6 {
-                color: $orange  !important;
+                color: $orange !important;
                 font-size: 1.5625rem;
                 letter-spacing: -0.74px;
                 font-weight: 700;
@@ -1819,6 +1880,9 @@ header {
     }
 }
 
+// End of Government Rebates Page
+
+// Start of Footer Page
 footer {
     background: imgUrl('footer.png') right bottom, linear-gradient(136.9deg, $tertiary 31.95%, $secondary 83.91%);
     color: $white;
@@ -1894,8 +1958,9 @@ footer {
     }
 }
 
-// Styling for parts
+// Start of Footer Page
 
+// Styling for parts
 .brands {
     .heading {
         font-size: 1.125rem;
@@ -1938,9 +2003,14 @@ footer {
     background: $orange-light;
     font-size: 1.875rem;
 
+    @include media-breakpoint-up(xxl) {
+        margin-top: 8px;
+    }
+
     @include media-breakpoint-down(sm) {
         font-size: 1.125rem;
     }
+
 }
 
 .sustainability {

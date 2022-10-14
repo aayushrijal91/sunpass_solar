@@ -43,6 +43,8 @@ jQuery(function ($) {
                         ]
                     });
 
+                    AOS.refresh();
+                    
                     $(".accordion-head").on('click', function () {
                         $(".accordion-head").removeClass("active");
                         $(this).addClass('active');
