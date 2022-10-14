@@ -15,7 +15,7 @@ get_template_part('parts/section', 'brighte');
             <?php $section_1 = get_field("section_1"); ?>
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <div class="fs-10 fw-700 letter-spacing-n23 line-height-6 pb-4 pb-lg-6 text-orange"><?= $section_1['title'] ?></div>
+                    <div class="fs-10 fw-700 letter-spacing-n23 lh-6 pb-4 pb-lg-6 text-orange"><?= $section_1['title'] ?></div>
                     <div class="row pt-3 pt-lg-0">
                         <div class="col-auto">
                             <a href="<?= isset($section_1['button_1']['title']) ? $section_1['button_1']['title'] : "./" ?>" class="btn bordered border-secondary text-secondary px-4 px-xl-5"><?= isset($section_1['button_1']['title']) ? $section_1['button_1']['title'] : "Learn More" ?></a>
@@ -26,7 +26,7 @@ get_template_part('parts/section', 'brighte');
                     </div>
                 </div>
                 <div class="col-lg" data-aos="fade-left">
-                    <div class="fs-20 text-light-grey line-height-5">
+                    <div class="fs-20 text-light-grey lh-5">
                         <?= $section_1['description'] ?>
                     </div>
                 </div>

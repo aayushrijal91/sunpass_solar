@@ -12,8 +12,8 @@ get_template_part('parts/section', 'banner');
     <?php $section_1 = get_field('section_1'); ?>
     <section class="section_1" data-aos="fade-up">
         <div class="container">
-            <div class="text-capitalize text-secondary fw-900 letter-spacing-n23 fs-2 line-height-1"><?= $section_1['title'] ?></div>
-            <div class="text-light-grey letter-spacing-n074 fs-20 fw-500 line-height-2 pt-4"><?= $section_1['subtitle'] ?></div>
+            <div class="text-capitalize text-secondary fw-900 letter-spacing-n23 fs-2 lh-1"><?= $section_1['title'] ?></div>
+            <div class="text-light-grey letter-spacing-n074 fs-20 fw-500 lh-2 pt-4"><?= $section_1['subtitle'] ?></div>
         </div>
     </section>
     <img src="<?= get_template_directory_uri() ?>/images/lib/solar-services.jpg" class="w-100" alt="Solar Services">
@@ -23,8 +23,8 @@ get_template_part('parts/section', 'banner');
         <div class="container">
             <div class="row align-items-center" data-aos="fade-right">
                 <div class="col-xl-6">
-                    <div class="fw-700 fs-13 line-height-4 text-capitalize"><?= $section_2['title'] ?></div>
-                    <div class="line-height-11 pt-3"><?= $section_2['subtitle'] ?></div>
+                    <div class="fw-700 fs-13 lh-4 text-capitalize"><?= $section_2['title'] ?></div>
+                    <div class="lh-11 pt-3"><?= $section_2['subtitle'] ?></div>
                 </div>
             </div>
             <div class="services_list">

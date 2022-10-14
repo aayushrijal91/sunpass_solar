@@ -34,7 +34,7 @@
         </div>
 
         <div class="pt-4">
-            <a href="tel:<?= get_field('phone_number', 'options') ?>" class="btn btn-yellow text-dark rounded-10 py-3 px-md-4 px-xl-2 px-xl-5 fs-24 fw-500 line-height-1">
+            <a href="tel:<?= get_field('phone_number', 'options') ?>" class="btn btn-yellow text-dark rounded-10 py-3 px-md-4 px-xl-2 px-xl-5 fs-24 fw-500 lh-1">
                 <?= get_field('phone_number', 'options') ?>
             </a>
         </div>
@@ -65,7 +65,7 @@
                                     'container_id' => '',
                                 )); ?>
                                 <div class="ps-4">
-                                    <a href="tel:<?= get_field('phone_number', 'options') ?>" class="btn btn-yellow text-dark rounded-10 py-3 px-md-4 px-xl-2 px-xl-5 fs-24 fw-500 line-height-1">
+                                    <a href="tel:<?= get_field('phone_number', 'options') ?>" class="btn btn-yellow text-dark rounded-10 py-3 px-md-4 px-xl-2 px-xl-5 fs-24 fw-500 lh-1">
                                         <?= get_field('phone_number', 'options') ?>
                                     </a>
                                 </div>

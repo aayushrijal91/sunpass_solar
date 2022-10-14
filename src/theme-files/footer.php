@@ -15,8 +15,10 @@
                             $url = get_sub_field('url');
                     ?>
                             <div class="col-auto">
-                                <img src="<?= $icon['url'] ?>" alt="<?= $icon['alt'] ?>">
-                                <span class="social_username"><?= $username ?></span>
+                                <a href="<?= $url ?>" class="text-white text-decoration-none">
+                                    <img src="<?= $icon['url'] ?>" alt="<?= $icon['alt'] ?>">
+                                    <span class="social_username"><?= $username ?></span>
+                                </a>
                             </div>
                     <?php endwhile;
                     endif; ?>

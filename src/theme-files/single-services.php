@@ -16,7 +16,7 @@ get_template_part('parts/section', 'brighte');
                             <div class="heading text-secondary fw-700 fs-8 letter-spacing-n23 text-capitalize"><?= $section_1['title'] ?></div>
                         </div>
                         <div class="<?= $section_1['orientation'] == 'Horizontal' ? 'col-lg-6' : 'col-12' ?>">
-                            <div class="text-light-grey line-height-2 fs-22 letter-spacing-n066<?= $section_1['orientation'] == 'Vertical' ? ' pt-3' : '' ?>"><?= $section_1['description'] ?></div>
+                            <div class="text-light-grey lh-2 fs-22 letter-spacing-n066<?= $section_1['orientation'] == 'Vertical' ? ' pt-3' : '' ?>"><?= $section_1['description'] ?></div>
                         </div>
                     </div>
                     <div class="row justify-content-center gy-4 gy-lg-0 gx-lg-4 gx-xl-7 pt-5 pt-xl-6">
@@ -30,8 +30,8 @@ get_template_part('parts/section', 'brighte');
                         ?>
                                         <div class="col-lg-6" data-aos="fade-up">
                                             <div class="description_column">
-                                                <div class="text-orange fw-700 letter-spacing-n23 fs-10 line-height-4"><?= $title ?></div>
-                                                <div class="text-light-grey fs-22 line-height-2 letter-spacing-n066 pt-4">
+                                                <div class="text-orange fw-700 letter-spacing-n23 fs-10 lh-4"><?= $title ?></div>
+                                                <div class="text-light-grey fs-22 lh-2 letter-spacing-n066 pt-4">
                                                     <?= $description ?>
                                                 </div>
                                             </div>
@@ -58,7 +58,7 @@ get_template_part('parts/section', 'brighte');
             <div class="container-fluid">
                 <div class="row justify-content-center" data-aos="fade-up">
                     <div class="col-lg-11">
-                        <div class="text-center text-capitalize letter-spacing-n143 fw-900 fs-5 pb-4 line-height-1">What do we offer?</div>
+                        <div class="text-center text-capitalize letter-spacing-n143 fw-900 fs-5 pb-4 lh-1">What do we offer?</div>
                         <?php if ($section_2['choose_template'] == 'Template 1') :
                             $template_1 = $section_2['template_1']; ?>
                             <div class="template_1">
@@ -80,7 +80,7 @@ get_template_part('parts/section', 'brighte');
                                                             $list = get_sub_field('text');
                                     ?>
                                                             <div class="col-lg-4">
-                                                                <div class="list text-capitalize fs-18 line-height-2"><?= $list ?></div>
+                                                                <div class="list text-capitalize fs-18 lh-2"><?= $list ?></div>
                                                             </div>
                                     <?php
                                                         endwhile;
@@ -93,7 +93,7 @@ get_template_part('parts/section', 'brighte');
                                 </div>
 
                                 <div class="row justify-content-center">
-                                    <div class="col-xl-11 text-center letter-spacing-n066 fs-22 line-height-5"><?= $template_1['description'] ?></div>
+                                    <div class="col-xl-11 text-center letter-spacing-n066 fs-22 lh-5"><?= $template_1['description'] ?></div>
                                 </div>
                             </div>
                         <?php elseif ($section_2['choose_template'] == 'Template 2') :
@@ -115,7 +115,7 @@ get_template_part('parts/section', 'brighte');
                                             ?>
                                                                     <div class="col-lg-6">
                                                                         <div class="fw-900 fs-18"><?= $title ?></div>
-                                                                        <div class="description text-capitalize line-height-7 pt-3"><?= $description ?></div>
+                                                                        <div class="description text-capitalize lh-7 pt-3"><?= $description ?></div>
                                                                     </div>
                                             <?php
                                                                 endwhile;
@@ -177,7 +177,7 @@ get_template_part('parts/section', 'brighte');
                     <div class="col-xxl-11">
                         <div class="row gy-4 gy-lg-0 gx-xl-5">
                             <div class="col-lg-5" data-aos="fade-right">
-                                <div class="fw-700 fs-7 line-height-4 pb-3 text-capitalize"><?= $section_4['title'] ?></div>
+                                <div class="fw-700 fs-7 lh-4 pb-3 text-capitalize"><?= $section_4['title'] ?></div>
                                 <div class="row pt-3 pt-lg-4">
                                     <?php if (isset($section_4['button_1']['url'])) : ?>
                                         <div class="col-auto">
@@ -192,7 +192,7 @@ get_template_part('parts/section', 'brighte');
                                 </div>
                             </div>
                             <div class="col-lg col-xl-5 col-xxl pe-xl-5" data-aos="fade-left">
-                                <div class="description line-height-2 letter-spacing-n066"><?= $section_4['description'] ?></div>
+                                <div class="description lh-2 letter-spacing-n066"><?= $section_4['description'] ?></div>
                             </div>
                         </div>
                     </div>

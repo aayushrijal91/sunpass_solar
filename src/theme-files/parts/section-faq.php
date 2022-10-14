@@ -32,10 +32,10 @@
 
                                     <div class="row pt-4 pt-lg-5">
                                         <div class="col-auto">
-                                            <a href="<?= isset($button_1['url']) ? $button_1['url'] : '#' ?>" class="btn btn-orange text-white px-4"><?= isset($button_1['title']) ? $button_1['title'] : 'Learn More' ?></a>
+                                            <a href="<?= isset($button_1['url']) ? $button_1['url'] : './' ?>" class="btn btn-orange text-white px-4"><?= isset($button_1['title']) ? $button_1['title'] : 'Learn More' ?></a>
                                         </div>
                                         <div class="col-auto">
-                                            <a href="<?= isset($button_2['url']) ? $button_2['url'] : '#' ?>" class="btn btn-white bordered border-orange text-orange px-4"><?= isset($button_2['title']) ? $button_2['title'] : 'Get Started' ?></a>
+                                            <a href="<?= isset($button_2['url']) ? $button_2['url'] : './' ?>" class="btn btn-white bordered border-orange text-orange px-4"><?= isset($button_2['title']) ? $button_2['title'] : 'Get Started' ?></a>
                                         </div>
                                     </div>
                                 </div>

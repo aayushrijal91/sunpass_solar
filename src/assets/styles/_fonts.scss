@@ -36,10 +36,3 @@ $asset-path: "../fonts/";
 @include font-face("CircularStd", "CircularStd-Bold", 700);
 @include font-face("CircularStd", "CircularStd-Black", 900);
 
-$font-weights: 300, 400, 500, 600, 700, 800, 900;
-
-@each $fw in $font-weights {
-    .fw-#{$fw} {
-        font-weight: $fw;
-    }
-}

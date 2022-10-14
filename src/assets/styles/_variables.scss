@@ -141,5 +141,74 @@ $font-sizes: (
     // 12px
 );
 
-$form-group-margin-bottom: 0 !default;
-$enable-negative-margins: true;
+
+$border-radius:               .25rem !default;
+$border-radius-pill:          50rem !default;
+
+$utilities: () !default;
+$utilities: map-merge((
+    "line-height":(
+        property: line-height,
+        class: lh,
+        responsive: true,
+        values: (
+            1: 1,
+            2: 2,
+            3: 0.8,
+            4: 1.14,
+            5: 1.69,
+            6: 1.4,
+            7: 1.86,
+            8: 1.55,
+            9: 1.625,
+            10: 1.367,
+            11: 1.78
+        )
+    ),
+    "rounded": (
+        property: border-radius,
+        class: rounded,
+        responsive: true,
+        values: (
+            null: $border-radius,
+            0:0,
+            1:1px,
+            2:2px,
+            3:3px,
+            4:4px,
+            5:5px,
+            6:6px,
+            7:7px,
+            8:8px,
+            9:9px,
+            10:10px,
+            20:20px,
+            circle: 50%,
+            pill: $border-radius-pill
+        )
+    ),
+    "font-weight": (
+        property: font-weight,
+        class: fw,
+        responsive: true,
+        values: (
+            100:100,
+            200:200,
+            300:300,
+            400:400,
+            500:500,
+            600:600,
+            700:700,
+            800:800,
+            900:900
+        )
+    ),
+    "letter-spacing": (
+        property: letter-spacing,
+        class: ls,
+        values: (
+            1: 0.01em,
+            2: -0.2em
+        )
+    )
+), $utilities);

@@ -16,10 +16,10 @@ get_template_part('parts/section', 'brighte');
                 <?php $section_1 = get_field("section_1"); ?>
                 <div class="row align-items-center">
                     <div class="col-lg-8" data-aos="fade-right">
-                        <div class="fs-10 fw-700 letter-spacing-n23 line-height-6 pb-4 pb-lg-6 text-orange"><?= $section_1['title'] ?></div>
+                        <div class="fs-10 fw-700 letter-spacing-n23 lh-6 pb-4 pb-lg-6 text-orange"><?= $section_1['title'] ?></div>
                     </div>
                     <div class="col-lg" data-aos="fade-left">
-                        <div class="fs-20 text-light-grey line-height-5">
+                        <div class="fs-20 text-light-grey lh-5">
                             <?= $section_1['description'] ?>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ get_template_part('parts/section', 'brighte');
                 <?php $section_4 = get_field("section_4"); ?>
                 <div class="row gy-4 gy-lg-0">
                     <div class="col-lg-5" data-aos="fade-right">
-                        <div class="fs-11 fw-700 letter-spacing-n23 line-height-6 pb-4 pb-lg-6 text-orange"><?= $section_4['title'] ?></div>
+                        <div class="fs-11 fw-700 letter-spacing-n23 lh-6 pb-4 pb-lg-6 text-orange"><?= $section_4['title'] ?></div>
                         <div class="row">
                             <div class="col-auto">
                                 <a href="<?= $section_4['button_1']['url'] ?>" class="btn bordered border-orange text-orange px-4 px-xl-5"><?= $section_4['button_1']['title'] ?></a>
@@ -68,7 +68,7 @@ get_template_part('parts/section', 'brighte');
                         </div>
                     </div>
                     <div class="col-lg" data-aos="fade-left">
-                        <div class="fs-20 text-light-grey line-height-7 letter-spacing-n074">
+                        <div class="fs-20 text-light-grey lh-7 letter-spacing-n074">
                             <?= $section_4['description'] ?>
                         </div>
                     </div>

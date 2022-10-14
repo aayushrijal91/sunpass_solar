@@ -42,7 +42,7 @@ get_template_part('parts/section', 'brighte');
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-xl-11 text-center">
-                    <div class="fs-5 text-capitalize text-dark letter-spacing-n23 fw-700 line-height-1"><?= $section_2['title'] ?></div>
+                    <div class="fs-5 text-capitalize text-dark letter-spacing-n23 fw-700 lh-1"><?= $section_2['title'] ?></div>
                     <div class="letter-spacing-n066 subtitle text-lighter-grey pt-4"><?= $section_2['subtitle'] ?></div>
                 </div>
             </div>

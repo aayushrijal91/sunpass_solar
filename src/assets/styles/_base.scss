@@ -44,14 +44,6 @@ img {
     border-style: solid;
 }
 
-
-// Rounded buttons
-@for $i from 1 through 10 {
-    .rounded-#{$i} {
-        border-radius: #{$i}px;
-    }
-}
-
 h1,
 h2,
 h3,
@@ -72,6 +64,10 @@ h6 {
 .btn:focus {
     box-shadow: none;
     outline: none;
+}
+
+.text-decoration-none {
+    text-decoration: none;
 }
 
 //line-height

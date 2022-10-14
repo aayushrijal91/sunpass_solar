@@ -29,12 +29,12 @@ get_template_part('parts/section', 'brighte');
                                     <div class="row justify-content-between gy-4 gy-md-5 gy-lg-0">
                                         <div class="col-md-4">
                                             <div class="text-uppercase fs-20">Green Loan</div>
-                                            <div class="fs-1 line-height-1 fw-700"><?= $greenloan['min'] ?><span class="fs-10"> to </span><?= $greenloan['max'] ?></div>
+                                            <div class="fs-1 lh-1 fw-700"><?= $greenloan['min'] ?><span class="fs-10"> to </span><?= $greenloan['max'] ?></div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="text-capitalize fs-20">Variable Rate from</div>
                                             <div class="d-flex align-items-center">
-                                                <div class="fs-1 line-height-1 fw-700"><?= $variable_rate_from ?></div>
+                                                <div class="fs-1 lh-1 fw-700"><?= $variable_rate_from ?></div>
                                                 <div class="fs-18 ps-1">
                                                     <div>%</div>
                                                     <div>P.A.</div>
@@ -44,7 +44,7 @@ get_template_part('parts/section', 'brighte');
                                         <div class="col-md-4">
                                             <div class="text-capitalize fs-20">Comparison Rate^</div>
                                             <div class="d-flex align-items-center">
-                                                <div class="fs-1 line-height-1 fw-700"><?= $comparision_rate ?></div>
+                                                <div class="fs-1 lh-1 fw-700"><?= $comparision_rate ?></div>
                                                 <div class="fs-18 ps-1">
                                                     <div>%</div>
                                                     <div>P.A.</div>
@@ -55,7 +55,7 @@ get_template_part('parts/section', 'brighte');
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
-                                    <div class="text-capitalize fs-18 line-height-1">About the loan</div>
+                                    <div class="text-capitalize fs-18 lh-1">About the loan</div>
                                     <div class="text-capitalize fs-24 pt-2">
                                         <?= $about_loan ?>
                                     </div>
@@ -72,7 +72,7 @@ get_template_part('parts/section', 'brighte');
     <img src="<?= get_template_directory_uri() ?>/images/lib/solar-services.jpg" class="w-100" alt="Solar Services">
     <section class="section_2">
         <div class="container" data-aos="fade-up">
-            <div class="heading text-center fs-5 fw-900 line-height-1">Loan Features</div>
+            <div class="heading text-center fs-5 fw-900 lh-1">Loan Features</div>
             <div class="row gy-4 gy-md-5">
                 <?php
                 if (have_rows('section_2')) :
@@ -83,9 +83,9 @@ get_template_part('parts/section', 'brighte');
                                 $description = get_sub_field('description');
                 ?>
                                 <div class="col-md-6 col-xl-4">
-                                    <div class="list text-capitalize line-height-2">
+                                    <div class="list text-capitalize lh-2">
                                         <div class="fs-17 fw-700"><?= $title ?></div>
-                                        <div class="fs-20 line-height-6"><?= $description ?></div>
+                                        <div class="fs-20 lh-6"><?= $description ?></div>
                                     </div>
                                 </div>
                 <?php
@@ -102,7 +102,7 @@ get_template_part('parts/section', 'brighte');
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11">
-                    <div class="pb-5 pb-xl-7 fs-5 text-capitalize fw-900 line-height-1 letter-spacing-n143 text-center">
+                    <div class="pb-5 pb-xl-7 fs-5 text-capitalize fw-900 lh-1 letter-spacing-n143 text-center">
                         <?= $section_3['hero_title'] ?>
                     </div>
                     <div class="row align-items-center gy-5 gy-xl-0">

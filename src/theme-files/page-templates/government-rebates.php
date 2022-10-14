@@ -13,7 +13,7 @@ get_template_part('parts/section', 'brighte');
     <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
             <div class="col-xl-11">
-                <div class="text-center text-secondary fs-13 line-height-1">System Calculator</div>
+                <div class="text-center text-secondary fs-13 lh-1">System Calculator</div>
                 <hr>
             </div>
             <div class="col-lg-8">
@@ -99,7 +99,7 @@ get_template_part('parts/section', 'brighte');
                         <div class="col-lg-6" data-aos="fade-right">
                             <div class="row justify-content-end">
                                 <div class="col-xxl-10">
-                                    <div class="heading text-dark text-capitalize fw-900 fs-2 letter-spacing-n212 line-height-1"><?= $section_1['title'] ?></div>
+                                    <div class="heading text-dark text-capitalize fw-900 fs-2 letter-spacing-n212 lh-1"><?= $section_1['title'] ?></div>
                                     <div class="description"><?= $section_1['description'] ?></div>
                                 </div>
                             </div>
