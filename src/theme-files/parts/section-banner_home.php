@@ -2,8 +2,8 @@
 $banner = get_field("banner");
 $banner_buttons = get_field("banner_buttons");
 ?>
+<?php get_template_part('parts/section', 'nav'); ?>
 <header class="home_header">
-    <?php get_template_part('parts/section', 'nav'); ?>
     <div class="banner" data-aos="fade-up">
         <div class="container">
             <div class="row gy-4 gy-md-0">
