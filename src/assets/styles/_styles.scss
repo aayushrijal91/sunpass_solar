@@ -4,6 +4,8 @@
 
 // Start of header
 header {
+    // margin-top: 167px;
+
     .slide-nav {
         position: fixed;
         background: $primary;
@@ -27,6 +29,9 @@ header {
         background: imgUrl("navigation.png") right top, linear-gradient(124.27deg, #0E9447 28%, #19BE60 92.45%);
         padding: 8px 0;
         background-size: cover;
+        // position: fixed;
+        // width: 100%;
+        // z-index: 1000;
 
         @include media-breakpoint-up(md) {
             background-size: contain;
@@ -51,6 +56,10 @@ header {
                     right: 13px;
                     top: 13px;
                 }
+
+                &.current-menu-item a {
+                    font-weight: 900;
+                }
             }
         }
 
@@ -61,6 +70,10 @@ header {
                 a {
                     color: $white;
                     font-size: 1rem;
+                }
+
+                &.current-menu-item a {
+                    font-weight: 700;
                 }
             }
         }
@@ -112,6 +125,7 @@ header {
         .banner {
             background: imgUrl("subpage_banner.png") left bottom;
             padding: 110px 0;
+            margin-top: 167px;
 
             @include media-breakpoint-down(lg) {
                 background-position-y: top;
@@ -836,6 +850,7 @@ header {
         }
     }
 }
+
 // End of FAQ Page
 
 // Start of About Us Page
@@ -2047,8 +2062,6 @@ footer {
                 text-transform: capitalize;
                 transition: 0.2s all;
                 font-size: 1.125rem;
-                display: flex;
-                justify-content: space-between;
 
                 @include media-breakpoint-up(md) {
                     font-size: 1.5rem; // 24px
@@ -2060,10 +2073,8 @@ footer {
 
                 .main-question {
                     padding: 21px 31px;
-                    // max-width: 91%;
 
                     @include media-breakpoint-down(sm) {
-                        // max-width: 95%;
                         padding: 21px 16px;
                     }
                 }
@@ -2073,8 +2084,8 @@ footer {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: linear-gradient(106deg, $white 18%, rgba(255, 108, 0, 0.08) 0 100%);
-                    background-size: contain;
+                    background: imgUrl('dark-faq-bg.png') top left;
+                    background-size: cover;
                 }
 
                 &.active {
@@ -2082,7 +2093,8 @@ footer {
 
                     .plusminus {
                         color: $white;
-                        background: linear-gradient(106deg, $white 18%, rgba(255, 108, 0, 1) 0 100%);
+                        background: imgUrl('faint-faq-bg.png') top left;
+                        background-size: cover;
                     }
                 }
             }

@@ -5,7 +5,6 @@ $banner_buttons = get_field("banner_buttons");
 <header class="home_header">
     <?php get_template_part('parts/section', 'nav'); ?>
     <div class="banner" data-aos="fade-up">
-        <!-- <img src="<?= get_template_directory_uri() ?>/images/lib/sunpass-passport.png" alt="Sunpass Passport" class="sunpass_passport"> -->
         <div class="container">
             <div class="row gy-4 gy-md-0">
                 <div class="col-md-2 col-lg-3 text-center">
