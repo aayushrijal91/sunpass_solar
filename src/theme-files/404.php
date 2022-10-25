@@ -9,7 +9,7 @@ get_template_part('parts/section', 'banner');
 ?>
 
 <div class="container">
-    <h1>blogs</h1>
+    <div class="fs-4 text-center py-7">Sorry! The page you are looking for doesn't exist.</div>
 </div>
 
 <?php get_footer(); ?>
