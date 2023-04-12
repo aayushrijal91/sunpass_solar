@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6" data-aos="fade-right">
-                <div class="fs-6 fw-700 letter-spacing-n199"><?= get_field('sustainability', 'options')['title'] ?></div>
+                <div class="fs-64 fw-700 letter-spacing-n199"><?= get_field('sustainability', 'options')['title'] ?></div>
                 <div class="fs-20 fw-700 text-orange pt-4"><?= get_field('sustainability', 'options')['subtitle'] ?></div>
             </div>
             <div class="col-lg-6" data-aos="fade-left">

@@ -1747,8 +1747,39 @@ header {
 
 // End of Property Type Page
 
-// Start of Government Rebates Page
-.governmentRebates_page {
+// Residential Page
+
+.residential_page {
+    section.parts {
+        background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
+        background-size: contain;
+        padding-bottom: 265px;
+
+
+        .part_1 {
+            padding: 124px 0;
+        }
+
+        .part_2 {
+            position: relative;
+            padding-top: 50px;
+
+            .globe-left {
+                position: absolute;
+                z-index: -1;
+            }
+        }
+
+        .part_3 {
+            padding: 93px 0 43px;
+        }
+    }
+}
+
+// End of Residential Page
+
+// Start of Calculator Page
+.calculator_page {
     background: imgUrl('globe-left.png', 'lib') left center rgba(19, 152, 76, 0.05);
     padding: 60px 0;
 
@@ -1911,6 +1942,26 @@ header {
                         margin-left: -1.5rem;
                     }
                 }
+            }
+        }
+    }
+}
+
+// End of Government Rebates Page
+
+// Start of Government Rebates Page
+.governmentRebates_page {
+    // background: imgUrl('globe-left.png', 'lib') left center rgba(19, 152, 76, 0.05);
+//    padding: 60px 0;
+
+    section.section_1 {
+        background: imgUrl('white-curve-1.png') center bottom rgba(19, 152, 76, 0.05);
+        background-size: contain;
+        padding: 61px 0 142px;
+
+        .heading {
+            span {
+                color: $secondary;
             }
         }
     }

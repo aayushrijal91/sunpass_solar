@@ -15,11 +15,11 @@ get_template_part('parts/section', 'brighte');
             <div class="container">
                 <div class="row gy-4 gy-lg-0">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <div class="heading text-dark text-capitalize fs-6 fw-700">Licensed and Experienced Solar Technicians</div>
-                        <div class="fs-19 fw-700 subheading text-orange pt-3">From small residential solar installation to large-scale commercial solar projects.</div>
+                        <div class="heading text-dark text-capitalize fs-64 fw-700">Licensed and Experienced Solar Technicians</div>
+                        <div class="fs-25 fw-700 subheading text-orange pt-3">From small residential solar installation to large-scale commercial solar projects.</div>
                     </div>
                     <div class="col-lg-6 px-xl-5" data-aos="fade-left">
-                        <div class="description lh-7 fs-24">
+                        <div class="description lh-7 fs-16">
                             <p>From small residential solar installation to large-scale commercial solar projects, we can help you create the optimal solar power system based on your energy needs and budget. Do you have low power requirements for your home? A 1 kW system may be all you may require. A typical Australian household will require a 3 kW to 5 kW system. At SUNPASS Solar, our licensed and experienced solar technicians will take you through the installation process and costs.</p>
                             <p>We offer our services throughout <?= get_the_title() ?> and the surrounding regions. We offer Clean Energy Council approved solar panels and inverters. Besides, we offer products from brands that have a proven industry track record of reliability and performance.</p>
                         </div>
@@ -40,7 +40,7 @@ get_template_part('parts/section', 'brighte');
         <div class="container">
             <div class="row gy-5 gy-lg-0 gx-xl-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <div class="heading text-capitalize fw-900 fs-2 text-dark letter-spacing-n212">Backed By a 25-year performace warranty</div>
+                    <div class="heading text-capitalize fw-900 fs-80 text-dark letter-spacing-n212">Backed By a 25-year performace warranty</div>
                     <div class="description">
                         <p>All our solar panel installations are backed by a 25-year performance warranty. Besides, our installations are covered by 3rd-party liability insurance of up to $1,400,000.</p>
                         If you want to discuss your solar system installation, repair, maintenance, or replacement needs with us, call us at 1300 289 218. You may also fill out this online form to get a free quote.

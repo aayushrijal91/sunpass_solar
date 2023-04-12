@@ -20,8 +20,8 @@ get_template_part('parts/section', 'brighte');
                         <img src="<?= $section_1['image']['url'] ?>" alt="<?= $section_1['image']['alt'] ?>">
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
-                        <div class="text-orange fs-22">Inverters</div>
-                        <div class="fs-2 lh-10 text-orange fw-900 letter-spacing-n23"><?= $section_1['title'] ?></div>
+                        <div class="text-orange fs-20">Inverters</div>
+                        <div class="fs-80 lh-10 text-orange fw-900 letter-spacing-n23"><?= $section_1['title'] ?></div>
                         <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <?php
                             if (have_rows('section_1')) :
@@ -40,8 +40,8 @@ get_template_part('parts/section', 'brighte');
                             endif;
                             ?>
                         </div>
-                        <div class="description letter-spacing-n074 fs-18 text-light-grey lh-9"><?= $section_1['description'] ?></div>
-                        <div class="price text-orange letter-spacing-n074 fw-900 fs-10 lh-1">
+                        <div class="description letter-spacing-n074 fs-27 text-light-grey lh-9"><?= $section_1['description'] ?></div>
+                        <div class="price text-orange letter-spacing-n074 fw-900 fs-50 lh-1">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <?php
                                 if (have_rows('section_1')) :
@@ -68,8 +68,8 @@ get_template_part('parts/section', 'brighte');
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <div class="text-orange fs-22">Solars</div>
-                        <div class="fs-2 lh-10 text-orange fw-900 letter-spacing-n23"><?= $section_2['title'] ?></div>
+                        <div class="text-orange fs-20">Solars</div>
+                        <div class="fs-80 lh-10 text-orange fw-900 letter-spacing-n23"><?= $section_2['title'] ?></div>
                         <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <?php
                             if (have_rows('section_2')) :
@@ -88,8 +88,8 @@ get_template_part('parts/section', 'brighte');
                             endif;
                             ?>
                         </div>
-                        <div class="description letter-spacing-n074 fs-18 text-light-grey lh-9"><?= $section_2['description'] ?></div>
-                        <div class="price text-orange letter-spacing-n074 fw-900 fs-10 lh-1">
+                        <div class="description letter-spacing-n074 fs-27 text-light-grey lh-9"><?= $section_2['description'] ?></div>
+                        <div class="price text-orange letter-spacing-n074 fw-900 fs-50 lh-1">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <?php
                                 if (have_rows('section_2')) :

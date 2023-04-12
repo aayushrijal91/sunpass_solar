@@ -30,7 +30,7 @@ $the_query = new WP_Query($args);
             ?>
                 <div class="row justify-content-between mb-5 align-items-center" data-aos="fade-up">
                     <div class="col-md">
-                        <div class="fs-14">Select an area below</div>
+                        <div class="fs-36">Select an area below</div>
                     </div>
                     <div class="col-md-auto sub-heading">
                         Can’t find your area below? <a href="tel:<?= get_field('phone_number', 'options') ?>">Give us a Call</a> or <a href="/contact-us/">Enquire Now</a>

@@ -11,9 +11,9 @@ $banner_buttons = get_field("banner_buttons");
                     <img src="<?= $banner['logo']['url'] ?>" alt="<?= $banner['logo']['alt'] ?>">
                 </div>
                 <div class="col">
-                    <h1 class="fs-9 fw-900"><?= $banner['heading'] ?></h1>
-                    <h2 class="fs-9 fw-500"><?= $banner['sub_heading'] ?></h2>
-                    <div class="fs-17 text-grey fs-500 py-2"><?= $banner['description'] ?></div>
+                    <h1 class="fs-54 fw-900"><?= $banner['heading'] ?></h1>
+                    <h2 class="fs-54 fw-500"><?= $banner['sub_heading'] ?></h2>
+                    <div class="fs-30 text-grey fw-500 py-2"><?= $banner['description'] ?></div>
                     <div class="row pt-4">
                         <?php if (isset($banner_buttons['button_1']['url'])) : ?>
                             <div class="col-auto">

@@ -3,7 +3,7 @@
         <div class="row justify-content-center gy-4 gy-md-0 justify-content-md-between align-items-center py-4 pb-lg-5">
             <div class="col-8 col-md-3"><img src="<?= get_field('logo', 'options')['url'] ?>" alt="<?= get_field('logo', 'options')['alt'] ?>" class="footer-logo"></div>
             <div class="col-md col-lg-4 col-xl-auto">
-                <div class="text-white text-center fs-18 fw-500 text-capitalize">
+                <div class="text-white text-center fs-27 fw-500 text-capitalize">
                     <?= get_field('footer_tagline', 'options') ?></div>
             </div>
             <div class="col-auto">
@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row justify-content-between gy-4 gy-lg-0">
                 <div class="col-6 col-md-auto">
-                    <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">SiteMap</div>
+                    <div class="font-roboto fw-700 fs-18 pb-3 pb-md-4">SiteMap</div>
                     <?php wp_nav_menu(array(
                         'menu' => 'Footer Sitemap',
                         'item_class' => 'nav-item',
@@ -41,7 +41,7 @@
                     )); ?>
                 </div>
                 <div class="col-6 col-md-auto">
-                    <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">About Solar Power</div>
+                    <div class="font-roboto fw-700 fs-18 pb-3 pb-md-4">About Solar Power</div>
                     <?php wp_nav_menu(array(
                         'menu' => 'Footer About',
                         'link_class' => 'nav-link',
@@ -50,7 +50,7 @@
                     )); ?>
                 </div>
                 <div class="col-6 col-md-auto">
-                    <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">Residential</div>
+                    <div class="font-roboto fw-700 fs-18 pb-3 pb-md-4">Residential</div>
                     <?php wp_nav_menu(array(
                         'menu' => 'Footer Residential Menu',
                         'link_class' => 'nav-link',
@@ -59,7 +59,7 @@
                     )); ?>
                 </div>
                 <div class="col-6 col-md-auto">
-                    <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">Commercial</div>
+                    <div class="font-roboto fw-700 fs-18 pb-3 pb-md-4">Commercial</div>
                     <?php wp_nav_menu(array(
                         'menu' => 'Footer Commercial Menu',
                         'link_class' => 'nav-link',
@@ -68,7 +68,7 @@
                     )); ?>
                 </div>
                 <div class="col-md-8 col-lg-4">
-                    <div class="font-roboto fw-700 fs-23 pb-3 pb-md-4">Solar Services</div>
+                    <div class="font-roboto fw-700 fs-18 pb-3 pb-md-4">Solar Services</div>
                     <?php wp_nav_menu(array(
                         'menu' => 'Footer Services',
                         'link_class' => 'nav-link',

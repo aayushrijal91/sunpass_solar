@@ -12,7 +12,7 @@ get_template_part('parts/section', 'banner');
     <?php $section_1 = get_field('section_1'); ?>
     <section class="section_1" data-aos="fade-up">
         <div class="container">
-            <div class="text-capitalize text-secondary fw-900 letter-spacing-n23 fs-2 lh-1"><?= $section_1['title'] ?></div>
+            <div class="text-capitalize text-secondary fw-900 letter-spacing-n23 fs-80 lh-1"><?= $section_1['title'] ?></div>
             <div class="text-light-grey letter-spacing-n074 fs-20 fw-500 lh-2 pt-4"><?= $section_1['subtitle'] ?></div>
         </div>
     </section>
@@ -23,7 +23,7 @@ get_template_part('parts/section', 'banner');
         <div class="container">
             <div class="row align-items-center" data-aos="fade-right">
                 <div class="col-xl-6">
-                    <div class="fw-700 fs-13 lh-4 text-capitalize"><?= $section_2['title'] ?></div>
+                    <div class="fw-700 fs-40 lh-4 text-capitalize"><?= $section_2['title'] ?></div>
                     <div class="lh-11 pt-3"><?= $section_2['subtitle'] ?></div>
                 </div>
             </div>
@@ -52,19 +52,19 @@ get_template_part('parts/section', 'banner');
                             <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up">
                                 <a href="<?= $link ?>" class="service_card">
                                     <div class="image"></div>
-                                    <div class="title fs-18"><?= $title ?></div>
+                                    <div class="title fs-27"><?= $title ?></div>
                                     <div class="description"><?= $description ?></div>
                                     <div class="row align-items-center py-1">
                                         <div class="col-auto">
                                             <img src="<?= get_template_directory_uri() ?>/images/icons/verified.png" alt="Verified">
                                         </div>
-                                        <div class="col fs-25">No job too big or small</div>
+                                        <div class="col fs-14">No job too big or small</div>
                                     </div>
                                     <div class="row align-items-center py-1">
                                         <div class="col-auto">
                                             <img src="<?= get_template_directory_uri() ?>/images/icons/quality.png" alt="Quality">
                                         </div>
-                                        <div class="col fs-25">Quality installations</div>
+                                        <div class="col fs-14">Quality installations</div>
                                     </div>
                                     <div class="row align-items-center py-1">
                                         <div class="col-auto">
@@ -79,7 +79,7 @@ get_template_part('parts/section', 'banner');
                                             </svg>
 
                                         </div>
-                                        <div class="col fs-25">30+ years experience</div>
+                                        <div class="col fs-14">30+ years experience</div>
                                     </div>
                                 </a>
                             </div>

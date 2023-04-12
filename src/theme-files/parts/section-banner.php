@@ -14,7 +14,7 @@ if ((get_field('banner_title') !== null) && (empty(get_field('banner_title')) ==
         <div class="container">
             <div class="row gy-4 gy-xl-0 gx-xl-7 align-items-center">
                 <div class="col-12 col-xl-auto">
-                    <h1 class="heading fs-9 fw-700">
+                    <h1 class="heading 54 fw-700">
                         <?= empty($banner_title) ? "Page Not Found" : $banner_title; ?>
                     </h1>
                 </div>

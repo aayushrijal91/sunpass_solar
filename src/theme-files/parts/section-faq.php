@@ -11,6 +11,7 @@
                         while (have_rows('faq_list')) : the_row();
                             $question = get_sub_field('question');
                             $answer = get_sub_field('answer');
+                            // echo $answer;
             ?>
                             <div class="accordion-card">
                                 <div class="accordion-head<?= ($index == 1) ? " active" : ""; ?>">

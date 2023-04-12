@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const sourcemaps = require('gulp-sourcemaps');
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
 const sass = require('gulp-sass')(require('sass'));
 const cssnano = require('gulp-cssnano');
 const concat = require('gulp-concat');
@@ -33,7 +33,7 @@ var destinations = {
     images: `${build}images/`,
     styles: `${build}styles/`,
     scripts: `${build}scripts/`,
-    fonts: `${build}fonts/`,
+    fonts: `${build}/styles/fonts/`,
     data_files: `${build}files/`,
 }
 
@@ -60,7 +60,7 @@ function styles() {
             browserSync.notify('<pre style="text-align: left">' + err.message + '</pre>', 10000);
             this.emit('end');
         }))
-        .pipe(autoprefixer())
+        // .pipe(autoprefixer())
         .pipe(cssnano())
         .pipe(gulp.dest(destinations.styles))
         .pipe(browserSync.stream({
@@ -103,7 +103,7 @@ function clean() {
 
 function watch() {
     browserSync.init({
-        proxy: encodeURI(`localhost/projects/${path.resolve(__dirname, '../').split(path.sep).pop()}/`),
+        proxy: encodeURI(`localhost/${path.resolve(__dirname, '../').split(path.sep).pop()}/`),
         injectChanges: true,
     });
 
