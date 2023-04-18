@@ -139,7 +139,6 @@ get_template_part('parts/section', 'brighte');
                         <div class="fs-80 fw-900 text-capitalize lh-1 letter-spacing-n212"><?= $section_2_5['title'] ?></div>
                         <div class="description fs-21"><?= $section_2_5['description'] ?></div>
                         <a href="<?= $section_2_5['button']['url'] ?>" class="btn d-inline-flex btn-secondary text-white px-4 px-xl-5"><?= $section_2_5['button']['title'] ?></a>
-
                     </div>
                 </div>
             </div>
