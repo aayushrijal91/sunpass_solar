@@ -1959,6 +1959,10 @@ header {
         background-size: contain;
         padding: 61px 0 142px;
 
+        @include media-breakpoint-down(sm) {
+            padding: 61px 0;
+        }
+
         .heading {
             span {
                 color: $secondary;
@@ -1968,6 +1972,14 @@ header {
 
     section.section_2 {
         padding: 90px 0 157px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 64px 0;
+
+            .description {
+                font-size: 16px !important;
+            }
+        }
 
         .accordion-container {
             width: 100%;
@@ -2061,7 +2073,7 @@ header {
             line-height: 1.8;
 
             @include media-breakpoint-down(sm) {
-                font-size: 14px;
+                font-size: 16px;
             }
 
             ul {
@@ -2077,7 +2089,8 @@ header {
             padding-top: 32px;
 
             @include media-breakpoint-down(sm) {
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 1.6;
             }
         }
     }
@@ -2085,6 +2098,11 @@ header {
     section.section_5 {
         background: imgUrl('governmentRebatesSection5.png') right center rgba(19, 152, 76, 0.05);
         padding: 129px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 80px 0;
+            background: rgba(19, 152, 76, 0.05);
+        }
 
         .heading {
             color: $dark;
@@ -2102,13 +2120,17 @@ header {
             line-height: 1.55;
 
             @include media-breakpoint-down(sm) {
-                font-size: 14px;
+                font-size: 16px !important;
             }
         }
     }
 
     section.section_6 {
         padding: 91px 0 157px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 80px 0;
+        }
 
         .heading {
             span {
@@ -2120,6 +2142,10 @@ header {
             line-height: 1.55;
             padding-top: 43px;
             letter-spacing: -0.74px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 16px !important;
+            }
         }
 
         .program_card {

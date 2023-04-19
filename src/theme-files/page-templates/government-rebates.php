@@ -13,11 +13,11 @@ get_template_part('parts/section', 'brighte');
     <section class="section_1">
         <?php $section_1 = get_field('section_1'); ?>
         <div class="container">
-            <div class="row">
-                <div class="col-5">
+            <div class="row gy-4 gy-lg-0">
+                <div class="col-lg-5">
                     <div class="fs-64 text-dark fw-700 lh-1 heading"><?= $section_1['title'] ?></div>
                 </div>
-                <div class="col">
+                <div class="col-lg">
                     <div class="description text-light-grey lh-7">
                         <?= $section_1['description'] ?>
                     </div>
@@ -31,9 +31,9 @@ get_template_part('parts/section', 'brighte');
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
-                    <div class="row gx-xl-6">
-                        <div class="col-6">
-                            <div class="text-dark fs-70 fw-800 lh-1 heading pb-5"><?= $section_2['title'] ?></div>
+                    <div class="row gx-xl-6 gy-5 gy-xl-0">
+                        <div class="col-xl-6 order-md-2 order-xl-1">
+                            <div class="text-dark fs-70 fw-800 lh-1 heading pb-4 pb-md-5"><?= $section_2['title'] ?></div>
                             <div class="description text-light-grey fs-20 lh-8 pb-4">
                                 <?= $section_2['description'] ?>
                             </div>
@@ -82,8 +82,8 @@ get_template_part('parts/section', 'brighte');
                                 ?>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <img src="<?= $section_2['image']['url'] ?>" alt="<?= $section_2['image']['alt'] ?>">
+                        <div class="col-xl-6 order-md-1 order-xl-2">
+                            <img src="<?= $section_2['image']['url'] ?>" alt="<?= $section_2['image']['alt'] ?>" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -109,10 +109,10 @@ get_template_part('parts/section', 'brighte');
             <div class="row justify-content-center">
                 <div class="col-xl-11">
                     <div class="row align-items-center">
-                        <div class="col-6">
+                        <div class="col-lg-6">
                             <img src="<?= $section_4['image']['url'] ?>" alt="<?= $section_4['image']['alt'] ?>">
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6">
                             <div class="py-5">
                                 <div class="fs-70 lh-1 fw-900 ls-n1_85"><?= $section_4['title'] ?></div>
                                 <div class="description"><?= $section_4['description'] ?></div>
@@ -129,7 +129,7 @@ get_template_part('parts/section', 'brighte');
 
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-xl-8 col-xxl-6">
                     <div class="heading fs-70 lh-1 fw-700"><?= $section_5['title'] ?></div>
                     <div class="description">
                         <?= $section_5['description'] ?>
@@ -160,7 +160,7 @@ get_template_part('parts/section', 'brighte');
                                 if (have_rows('list')) :
                                     while (have_rows('list')) : the_row();
                         ?>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6 col-xl-3">
                                             <div class="program_card">
                                                 <?= get_sub_field('text') ?>
                                             </div>
