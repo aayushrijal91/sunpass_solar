@@ -48,6 +48,8 @@ jQuery(function ($) {
                     $(".accordion-head").on('click', function () {
                         $(".accordion-head").removeClass("active");
                         $(this).addClass('active');
+                        $('.accordion-card').removeClass('active');
+                        $(this).parents('.accordion-card').addClass('active');
 
                         if ($('.accordion-body').is(':visible')) {
                             $(".accordion-body").slideUp(300);

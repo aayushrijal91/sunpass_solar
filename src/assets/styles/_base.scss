@@ -33,6 +33,11 @@ img {
     font-size: 1rem;
     font-weight: 500;
 
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
     @include media-breakpoint-down(sm) {
         font-size: 0.875rem;
         height: 48px;
@@ -59,11 +64,6 @@ h6 {
 
 .bordered {
     border-width: 2px;
-}
-
-.btn:focus {
-    box-shadow: none;
-    outline: none;
 }
 
 .text-decoration-none {
